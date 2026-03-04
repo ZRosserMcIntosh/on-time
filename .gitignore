@@ -1,0 +1,20 @@
+target/
+*.class
+*.jar
+*.log
+dependency-reduced-pom.xml
+
+# IDE
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Save data (local only)
+saves/
