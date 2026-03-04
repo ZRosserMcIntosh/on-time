@@ -472,7 +472,7 @@ Just—
 
 *Silence.*
 
-Someone says: "Drew?"
+**Rush** says: "Drew?"
 
 Nothing.
 
@@ -480,11 +480,11 @@ Nothing.
 
 A beat.
 
-Then Shepherd — and this is the key — **Shepherd** says: "Get up."
+Rush — a child, suddenly the oldest person in the room — says: "Get up."
 
-Quietly first.
+Quietly first. The way you talk to someone sleeping.
 
-Then louder.
+Then louder. Because he's not sleeping.
 
 Then—
 
@@ -492,17 +492,32 @@ Then—
 
 Breaking:
 
-"No, no, no, no."
+"No, no, no, no, no—"
 
-**Shepherd is the one who breaks.**
+**Rush is the one who breaks.**
 
-Because Shepherd didn't want this. Not really.
-He chose it because his philosophy demanded it.
-And now his philosophy is holding a dead kid.
+Not because he's weak.
+Because he just became something he was never supposed to be yet.
 
-That's why adults will lose it.
-Not because the villain won.
-Because the villain *grieved*.
+He's the big brother now.
+To two younger sisters.
+Standing over the person who was supposed to teach him how.
+
+And he's not ready.
+
+He is a child.
+They are all children.
+
+**Shepherd does not break.**
+
+Shepherd watches. Composed. Already past it.
+That's what makes him monstrous — not cruelty, but *composure*.
+A man who calculated the cost of a child and moved on
+while another child screams over the body.
+
+The contrast is the knife:
+Rush breaking because he's human.
+Shepherd still because he chose not to be.
 
 ---
 
@@ -604,6 +619,24 @@ Because the player hears what *they* chose to remember.
 CHOICE: Rush can punch a wall, hold Yen, or sit in silence.
 Each one is valid. None of them fix it.
 
+But then — regardless of choice — Yen finds him.
+
+She's standing in the doorway.
+She doesn't say anything about Drew.
+She says:
+
+"Rush? I'm hungry."
+
+And that's it.
+
+That's the moment Rush becomes the oldest.
+Not with a speech. Not with a decision.
+With a little sister who needs dinner.
+
+He is not ready.
+He is a child taking care of children.
+And there is no one left to teach him how.
+
 ### Chapter 30: "The Rushlight"
 
 Lu finds Drew's rushlight — the one from the market.
@@ -638,17 +671,30 @@ It misfires. It blames. It hardens. It nearly destroys.
 
 ### The Volatile Structure
 
+**Remember: These are all children.**
+Rush is not a soldier grieving a comrade. He is a kid who just lost his big brother
+and is now responsible for two younger sisters he doesn't know how to take care of.
+Lu is not a stoic strategist. She is a child who was adopted into this family
+and is now terrified that the thing holding her here just died.
+Yen is the youngest. She does not fully understand what happened.
+She just knows Drew isn't coming back, and nobody will explain why.
+
 **Phase 1 — Shrapnel (Ch 31-40)**
+- Rush tries to be Drew. Fails immediately. Burns food. Makes wrong calls. Snaps.
 - Rush blames himself. Replays every choice. "If I had stayed. If I had listened."
 - Lu withdraws completely. Stops talking. Stops eating. Becomes a wall.
+  She's not being dramatic. She's a child who doesn't know what to do with grief
+  so she's trying to disappear.
 - Yen doesn't understand. She keeps asking when Drew is coming back.
 - **Yen says something devastatingly simple.** Not wisdom. Just a child's logic:
   "But he said tomorrow."
   That line breaks adults.
+- Yen also: "Rush, can you carry me? Like Drew did?"
+  And Rush tries. And she's heavier than he expected. Because Drew made it look easy.
 - The siblings blame each other.
   Rush to Lu: "You always thought you were smarter. If you'd just—"
   Lu to Rush: "You were RIGHT THERE."
-- These aren't villain lines. These are grief lines. Real ones.
+- These aren't villain lines. These are grief lines. Real ones. From children.
 - Kimiru is nearly silent. Curled small. Breaks his own rules.
 
 **Phase 2 — The Temptation (Ch 41-50)** ⭐ THE MIRROR
@@ -809,7 +855,8 @@ Because the siblings finished it.
 - ✅ One shoe half-untied (the tactile grounding detail)
 - ✅ An unfinished sentence — accidental, not cinematic
 - ✅ Silence where there should be sound
-- ✅ **Shepherd** breaking, not just the heroes
+- ✅ **Rush** breaking — a child forced into a role he's not ready for
+- ✅ **Shepherd** standing still — composed, already past it, monstrous in his calm
 - ✅ Kimiru failing to speak
 - ✅ Callbacks to every promise, every plan, every "tomorrow"
 - ✅ A button that does nothing (Chapter 28)
@@ -818,9 +865,15 @@ Because the siblings finished it.
 
 ### The Four Beats:
 1. **Impact** — fast, almost missed
-2. **Confusion** — "Drew?"
-3. **Denial** — Shepherd: "No, no, no, no" (the man who caused it, breaking)
+2. **Confusion** — Rush: "Drew?" (a child's voice, not understanding)
+3. **Denial** — Rush: "No, no, no, no" (a child becoming the oldest, not ready)
 4. **Collapse** — Kimiru: "I do not understand this."
+
+### The Contrast:
+Rush breaks because he's human. Because he's a kid.
+Shepherd stands still. Already calculated. Already past it.
+That juxtaposition is what destroys adults —
+not the grief alone, but the grief next to indifference.
 
 ### The Grounding Detail:
 One shoe half-untied.
