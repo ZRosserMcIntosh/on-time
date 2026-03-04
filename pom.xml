@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.therushlight</groupId>
-    <artifactId>the-rushlight</artifactId>
-    <version>0.1.0</version>
+    <groupId>com.ontime</groupId>
+    <artifactId>on-time</artifactId>
+    <version>0.2.0</version>
     <packaging>jar</packaging>
 
     <name>On Time</name>
-    <description>On Time — a narrative adventure game in 100 chapters. After John Milton's poem. For Yen, Rush, and Lu.</description>
+    <description>A 3D narrative adventure — 100 chapters spanning 12 historical eras. Logic, history, and critical thinking woven into every choice. For Yen, Rush, and Lu.</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -104,7 +104,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.therushlight.Main</mainClass>
+                            <mainClass>com.ontime.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -120,7 +120,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.therushlight.Main</mainClass>
+                                    <mainClass>com.ontime.Main</mainClass>
                                 </transformer>
                             </transformers>
                             <filters>
@@ -159,9 +159,9 @@
                                 <configuration>
                                     <headerType>gui</headerType>
                                     <jar>${project.build.directory}/${project.build.finalName}.jar</jar>
-                                    <outfile>${project.build.directory}/TheRushlight.exe</outfile>
+                                    <outfile>${project.build.directory}/OnTime.exe</outfile>
                                     <dontWrapJar>false</dontWrapJar>
-                                    <errTitle>The Rushlight</errTitle>
+                                    <errTitle>On Time</errTitle>
                                     <downloadUrl>https://adoptium.net/</downloadUrl>
                                     <jre>
                                         <minVersion>17</minVersion>
@@ -173,15 +173,15 @@
                                         </opts>
                                     </jre>
                                     <versionInfo>
-                                        <fileVersion>0.1.0.0</fileVersion>
-                                        <txtFileVersion>0.1.0</txtFileVersion>
-                                        <fileDescription>The Rushlight — A small light is still a light</fileDescription>
+                                        <fileVersion>0.2.0.0</fileVersion>
+                                        <txtFileVersion>0.2.0</txtFileVersion>
+                                        <fileDescription>On Time — Every moment is a choice. Every era is a teacher.</fileDescription>
                                         <copyright>Ross McIntosh</copyright>
-                                        <productVersion>0.1.0.0</productVersion>
-                                        <txtProductVersion>0.1.0</txtProductVersion>
-                                        <productName>The Rushlight</productName>
-                                        <internalName>therushlight</internalName>
-                                        <originalFilename>TheRushlight.exe</originalFilename>
+                                        <productVersion>0.2.0.0</productVersion>
+                                        <txtProductVersion>0.2.0</txtProductVersion>
+                                        <productName>On Time</productName>
+                                        <internalName>ontime</internalName>
+                                        <originalFilename>OnTime.exe</originalFilename>
                                         <language>ENGLISH_US</language>
                                     </versionInfo>
                                 </configuration>
