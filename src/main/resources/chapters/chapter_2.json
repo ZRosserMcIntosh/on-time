@@ -1,0 +1,537 @@
+{
+  "id": "chapter_2",
+  "number": 2,
+  "title": "The Storm",
+  "subtitle": "The dark is just the light taking a breath.",
+  "scenes": {
+    "power_out": {
+      "background": "house_dark",
+      "music": "none",
+      "ambience": "thunder_rain_heavy",
+      "mood": "tense",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "power_1",
+          "speaker": null,
+          "text": "The lights go out all at once. The house disappears.",
+          "emotion": "neutral",
+          "next": "power_2"
+        },
+        {
+          "id": "power_2",
+          "speaker": "yen",
+          "text": "DREW!",
+          "emotion": "terrified",
+          "next": "power_3"
+        },
+        {
+          "id": "power_3",
+          "speaker": "drew",
+          "text": "I'm here. I'm right here. Nobody move — I've got the flashlight.",
+          "emotion": "calm",
+          "next": "power_4"
+        },
+        {
+          "id": "power_4",
+          "speaker": null,
+          "text": "A click. A beam of white cuts through the dark. Drew's face appears, lit from below. He makes a monster face.",
+          "emotion": "neutral",
+          "next": "power_5"
+        },
+        {
+          "id": "power_5",
+          "speaker": "yen",
+          "text": "Aaaah! ...oh. That's just you.",
+          "emotion": "relieved",
+          "next": "power_6"
+        },
+        {
+          "id": "power_6",
+          "speaker": "drew",
+          "text": "Just me. Scariest thing in this house.",
+          "emotion": "playful",
+          "next": "power_7"
+        },
+        {
+          "id": "power_7",
+          "speaker": "lu",
+          "text": "The power could be out for hours. The whole street's dark.",
+          "emotion": "worried",
+          "next": "power_8"
+        },
+        {
+          "id": "power_8",
+          "speaker": "drew",
+          "text": "Good.",
+          "emotion": "grinning",
+          "next": "power_9"
+        },
+        {
+          "id": "power_9",
+          "speaker": "rush",
+          "text": "Good?",
+          "emotion": "confused",
+          "next": "power_10"
+        },
+        {
+          "id": "power_10",
+          "speaker": "drew",
+          "text": "No screens. No homework. No rules. The dark just gave us permission to do whatever we want.",
+          "emotion": "excited",
+          "next": "flashlight_tag"
+        }
+      ]
+    },
+    "flashlight_tag": {
+      "background": "house_dark_flashlights",
+      "music": "playful_piano",
+      "ambience": "thunder_distant_laughter",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "flashlight_tag",
+          "speaker": "drew",
+          "text": "Flashlight tag. One flashlight. If the beam hits you, you're it. Go.",
+          "emotion": "commanding_playful",
+          "next": "tag_2"
+        },
+        {
+          "id": "tag_2",
+          "speaker": null,
+          "text": "Chaos. Beautiful chaos. Running through dark hallways. Yen squealing. Lu commando-crawling behind the couch. Rush hiding behind a door.",
+          "emotion": "neutral",
+          "next": "tag_3"
+        },
+        {
+          "id": "tag_3",
+          "speaker": "drew",
+          "text": "I hear breathing... someone's behind the curtain...",
+          "emotion": "hunting",
+          "next": "tag_4"
+        },
+        {
+          "id": "tag_4",
+          "speaker": "yen",
+          "text": "*giggling from behind the curtain*",
+          "emotion": "hiding_badly",
+          "next": "tag_5"
+        },
+        {
+          "id": "tag_5",
+          "speaker": "drew",
+          "text": "Hmm. Must've been the wind.",
+          "emotion": "pretending",
+          "next": "tag_6"
+        },
+        {
+          "id": "tag_6",
+          "speaker": null,
+          "text": "He walks right past Yen. On purpose. She thinks she's a genius.",
+          "emotion": "neutral",
+          "next": "tag_7"
+        },
+        {
+          "id": "tag_7",
+          "speaker": null,
+          "text": "Thunder shakes the house. Everyone freezes.",
+          "emotion": "neutral",
+          "next": "tag_8"
+        },
+        {
+          "id": "tag_8",
+          "speaker": "drew",
+          "text": "...Okay. Shadow puppet time.",
+          "emotion": "pivoting",
+          "next": "shadow_puppets"
+        }
+      ]
+    },
+    "shadow_puppets": {
+      "background": "house_wall_shadows",
+      "music": "gentle_acoustic",
+      "ambience": "rain_soft_thunder_distant",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "shadow_puppets",
+          "speaker": null,
+          "text": "Drew props the flashlight against a stack of books. The living room wall becomes a canvas.",
+          "emotion": "neutral",
+          "next": "shadow_2"
+        },
+        {
+          "id": "shadow_2",
+          "speaker": "drew",
+          "text": "Okay. Watch. This is a dog.",
+          "emotion": "focused",
+          "next": "shadow_3"
+        },
+        {
+          "id": "shadow_3",
+          "speaker": "lu",
+          "text": "That is not a dog.",
+          "emotion": "skeptical",
+          "next": "shadow_4"
+        },
+        {
+          "id": "shadow_4",
+          "speaker": "drew",
+          "text": "It's an artistic dog.",
+          "emotion": "defensive_playful",
+          "next": "shadow_5"
+        },
+        {
+          "id": "shadow_5",
+          "speaker": "yen",
+          "text": "Make a cat! Make a cat!",
+          "emotion": "bouncing",
+          "next": "shadow_6"
+        },
+        {
+          "id": "shadow_6",
+          "speaker": "drew",
+          "text": "One cat, coming up.",
+          "emotion": "performing",
+          "next": "shadow_7"
+        },
+        {
+          "id": "shadow_7",
+          "speaker": null,
+          "text": "His hands form something on the wall. It looks nothing like a cat. Everyone laughs anyway.",
+          "emotion": "neutral",
+          "next": "shadow_8"
+        },
+        {
+          "id": "shadow_8",
+          "speaker": "drew",
+          "text": "Okay, okay. Forget the puppets. I've got something better. A story.",
+          "emotion": "settling_in",
+          "next": "the_story"
+        }
+      ]
+    },
+    "the_story": {
+      "background": "house_dark_circle",
+      "music": "story_theme_soft",
+      "ambience": "rain_gentle",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "the_story",
+          "speaker": null,
+          "text": "They gather in a circle on the floor. Flashlight in the center. Faces lit gold.",
+          "emotion": "neutral",
+          "next": "story_2"
+        },
+        {
+          "id": "story_2",
+          "speaker": "drew",
+          "text": "Once, there were four lanterns.",
+          "emotion": "storytelling",
+          "next": "story_3"
+        },
+        {
+          "id": "story_3",
+          "speaker": "yen",
+          "text": "What color?",
+          "emotion": "engaged",
+          "next": "story_4"
+        },
+        {
+          "id": "story_4",
+          "speaker": "drew",
+          "text": "Gold, blue, rose, and yellow. Each one burned differently. The gold lantern burned the brightest — so bright it could light a whole room. But it burned the fastest.",
+          "emotion": "storytelling",
+          "next": "story_5"
+        },
+        {
+          "id": "story_5",
+          "speaker": "lu",
+          "text": "...That's sad.",
+          "emotion": "quiet",
+          "next": "story_6"
+        },
+        {
+          "id": "story_6",
+          "speaker": "drew",
+          "text": "It's not sad yet. Listen. The blue lantern burned steady. Not the brightest, but it never flickered. The rose lantern was clever — it could change its flame to match what was needed. And the yellow lantern... the yellow lantern was so small that nobody thought it mattered.",
+          "emotion": "storytelling",
+          "next": "story_7"
+        },
+        {
+          "id": "story_7",
+          "speaker": "yen",
+          "text": "I bet the yellow one matters.",
+          "emotion": "hopeful",
+          "next": "story_8"
+        },
+        {
+          "id": "story_8",
+          "speaker": "drew",
+          "text": "Shh. I'm getting there. One night, a great wind came. The kind that blows out everything. And the gold lantern — the brightest one — it went out first.",
+          "emotion": "storytelling_serious",
+          "next": "story_9"
+        },
+        {
+          "id": "story_9",
+          "speaker": null,
+          "text": "Silence. Even the thunder seems to pause.",
+          "emotion": "neutral",
+          "next": "story_10"
+        },
+        {
+          "id": "story_10",
+          "speaker": "rush",
+          "text": "...Then what?",
+          "emotion": "hooked",
+          "next": "story_11"
+        },
+        {
+          "id": "story_11",
+          "speaker": "drew",
+          "text": "The other three lanterns huddled together. And they found something out: when they put their flames close — not bright, just close — they made a light the wind couldn't blow out. Not because it was strong. Because it was together.",
+          "emotion": "storytelling",
+          "next": "story_12"
+        },
+        {
+          "id": "story_12",
+          "speaker": "yen",
+          "text": "What about the gold lantern?",
+          "emotion": "worried",
+          "next": "story_13"
+        },
+        {
+          "id": "story_13",
+          "speaker": "drew",
+          "text": "The gold lantern was gone. But its light wasn't. Because the others remembered how bright it burned. And every time they shone, a little bit of gold was in there too.",
+          "emotion": "gentle",
+          "next": "story_14"
+        },
+        {
+          "id": "story_14",
+          "speaker": null,
+          "text": "Nobody says anything for a long moment.",
+          "emotion": "neutral",
+          "next": "story_15"
+        },
+        {
+          "id": "story_15",
+          "speaker": "lu",
+          "text": "Drew... is the gold lantern you?",
+          "emotion": "quiet_realization",
+          "next": "story_16"
+        },
+        {
+          "id": "story_16",
+          "speaker": "drew",
+          "text": "It's just a story, Lu.",
+          "emotion": "deflecting",
+          "next": "story_17"
+        },
+        {
+          "id": "story_17",
+          "speaker": null,
+          "text": "But the way he says it. The way he doesn't quite look at her.",
+          "emotion": "neutral",
+          "next": "sit_choice"
+        },
+        {
+          "id": "sit_choice",
+          "speaker": null,
+          "text": "The storm rumbles outside. The flashlight flickers.",
+          "emotion": "neutral",
+          "choices": [
+            {
+              "text": "Rush sits closer to Drew.",
+              "nextNode": "sit_drew",
+              "effects": [
+                { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": 3 },
+                { "type": "ADD_MEMORY", "target": "sat_with_drew_in_storm" }
+              ]
+            },
+            {
+              "text": "Rush puts his arm around Yen.",
+              "nextNode": "sit_yen",
+              "effects": [
+                { "type": "ADJUST_RELATIONSHIP", "target": "yen", "value": 3 },
+                { "type": "ADD_VIRTUE", "target": "generosity", "value": 1 }
+              ]
+            },
+            {
+              "text": "Rush sits next to Lu.",
+              "nextNode": "sit_lu",
+              "effects": [
+                { "type": "ADJUST_RELATIONSHIP", "target": "lu", "value": 3 },
+                { "type": "ADD_MEMORY", "target": "chose_lu_in_storm" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sit_drew",
+          "speaker": null,
+          "text": "Rush moves closer to Drew. Drew puts his arm around him without saying anything. The kind of gesture that doesn't need words.",
+          "emotion": "neutral",
+          "next": "argue_setup"
+        },
+        {
+          "id": "sit_yen",
+          "speaker": null,
+          "text": "Rush puts his arm around Yen. She leans into him. Drew watches. And for just a moment, he smiles — the kind of smile that says: you're learning.",
+          "emotion": "neutral",
+          "next": "argue_setup"
+        },
+        {
+          "id": "sit_lu",
+          "speaker": null,
+          "text": "Rush sits next to Lu. She doesn't say anything, but she leans her shoulder against his. Drew notices. Nods, just barely.",
+          "emotion": "neutral",
+          "next": "argue_setup"
+        },
+        {
+          "id": "argue_setup",
+          "speaker": "lu",
+          "text": "I call the couch for sleeping.",
+          "emotion": "claiming",
+          "next": "argue_2"
+        },
+        {
+          "id": "argue_2",
+          "speaker": "rush",
+          "text": "What? No way. The couch is mine. I was here first.",
+          "emotion": "indignant",
+          "next": "argue_3"
+        },
+        {
+          "id": "argue_3",
+          "speaker": "lu",
+          "text": "You were NOT here first. You were in the kitchen eating crackers.",
+          "emotion": "fired_up",
+          "next": "argue_4"
+        },
+        {
+          "id": "argue_4",
+          "speaker": "rush",
+          "text": "I was scouting! That counts!",
+          "emotion": "defensive",
+          "next": "argue_5"
+        },
+        {
+          "id": "argue_5",
+          "speaker": "drew",
+          "text": "Hey.",
+          "emotion": "calm",
+          "next": "argue_6"
+        },
+        {
+          "id": "argue_6",
+          "speaker": null,
+          "text": "Just that. Just 'hey.' Both of them stop.",
+          "emotion": "neutral",
+          "next": "argue_7"
+        },
+        {
+          "id": "argue_7",
+          "speaker": "drew",
+          "text": "Yen gets the couch. She's smallest. You two get the floor cushions. I'll take the rug.",
+          "emotion": "final",
+          "next": "argue_8"
+        },
+        {
+          "id": "argue_8",
+          "speaker": "rush",
+          "text": "The rug is the worst spot.",
+          "emotion": "guilty",
+          "next": "argue_9"
+        },
+        {
+          "id": "argue_9",
+          "speaker": "drew",
+          "text": "Good thing I'm the toughest, then.",
+          "emotion": "wink",
+          "next": "argue_10"
+        },
+        {
+          "id": "argue_10",
+          "speaker": null,
+          "text": "He always takes the worst spot. Every time. Rush is just now noticing.",
+          "emotion": "neutral",
+          "next": "sleeping"
+        }
+      ]
+    },
+    "sleeping": {
+      "background": "house_dark_sleeping",
+      "music": "drew_theme_music_box",
+      "ambience": "rain_gentle_breathing",
+      "mood": "peace",
+      "characters": ["drew", "rush", "lu", "yen", "kimiru"],
+      "dialogue": [
+        {
+          "id": "sleeping",
+          "speaker": null,
+          "text": "Later. The storm has softened to rain. Yen is asleep on the couch, one arm hanging off. Lu is curled on the floor cushions, breathing slow.",
+          "emotion": "neutral",
+          "next": "sleeping_2"
+        },
+        {
+          "id": "sleeping_2",
+          "speaker": null,
+          "text": "Drew is on the rug. He's not asleep. His eyes are open, staring at the ceiling.",
+          "emotion": "neutral",
+          "next": "sleeping_3"
+        },
+        {
+          "id": "sleeping_3",
+          "speaker": null,
+          "text": "Lightning flashes. For a moment, two green eyes are visible at the window. Watching.",
+          "emotion": "neutral",
+          "next": "sleeping_4"
+        },
+        {
+          "id": "sleeping_4",
+          "speaker": null,
+          "text": "Drew turns his head. Sees the eyes. Doesn't flinch.",
+          "emotion": "neutral",
+          "next": "sleeping_5"
+        },
+        {
+          "id": "sleeping_5",
+          "speaker": "drew",
+          "text": "...I know you're there.",
+          "emotion": "quiet",
+          "next": "sleeping_6"
+        },
+        {
+          "id": "sleeping_6",
+          "speaker": null,
+          "text": "The eyes blink. Slowly. Then they're gone.",
+          "emotion": "neutral",
+          "next": "sleeping_7"
+        },
+        {
+          "id": "sleeping_7",
+          "speaker": null,
+          "text": "Drew watches the window for a long time. Then he closes his eyes.",
+          "emotion": "neutral",
+          "next": "sleeping_8"
+        },
+        {
+          "id": "sleeping_8",
+          "speaker": null,
+          "text": "The rain falls. Four kids sleep. One of them is awake just long enough to make sure the others are safe.",
+          "emotion": "neutral",
+          "effects": [
+            { "type": "ADD_MEMORY", "target": "drew_took_the_rug" },
+            { "type": "ADD_MEMORY", "target": "the_four_lanterns_story" },
+            { "type": "SET_FLAG", "target": "chapter_2_complete", "value": true }
+          ]
+        }
+      ]
+    }
+  }
+}

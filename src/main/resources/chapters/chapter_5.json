@@ -1,0 +1,392 @@
+{
+  "id": "chapter_5",
+  "number": 5,
+  "title": "The Secret",
+  "subtitle": "The bravest thing you can say is 'I don't know.'",
+  "scenes": {
+    "the_roof": {
+      "background": "house_roof_evening",
+      "music": "drew_theme_guitar",
+      "ambience": "evening_crickets_distant_traffic",
+      "mood": "peace",
+      "characters": ["drew", "rush"],
+      "dialogue": [
+        {
+          "id": "roof_1",
+          "speaker": null,
+          "text": "The roof. Drew's spot. You have to climb out the hallway window and step onto the slant — carefully. Drew showed Rush how last summer. Nobody else knows about it.",
+          "emotion": "neutral",
+          "next": "roof_2"
+        },
+        {
+          "id": "roof_2",
+          "speaker": null,
+          "text": "The sky is turning purple. Somewhere down the street, a dog barks. Normal sounds. Safe sounds.",
+          "emotion": "neutral",
+          "next": "roof_3"
+        },
+        {
+          "id": "roof_3",
+          "speaker": "drew",
+          "text": "You know the best thing about up here?",
+          "emotion": "relaxed",
+          "next": "roof_4"
+        },
+        {
+          "id": "roof_4",
+          "speaker": "rush",
+          "text": "The view?",
+          "emotion": "guessing",
+          "next": "roof_5"
+        },
+        {
+          "id": "roof_5",
+          "speaker": "drew",
+          "text": "Nobody can hear you yell.",
+          "emotion": "grinning",
+          "next": "roof_6"
+        },
+        {
+          "id": "roof_6",
+          "speaker": "rush",
+          "text": "Are you going to yell?",
+          "emotion": "wary",
+          "next": "roof_7"
+        },
+        {
+          "id": "roof_7",
+          "speaker": "drew",
+          "text": "Not tonight. Tonight's for talking.",
+          "emotion": "settling_in",
+          "next": "roof_8"
+        },
+        {
+          "id": "roof_8",
+          "speaker": null,
+          "text": "They sit. Legs dangling over the edge, but not far enough to be dangerous. Drew would never let it be actually dangerous.",
+          "emotion": "neutral",
+          "next": "roof_9"
+        },
+        {
+          "id": "roof_9",
+          "speaker": "drew",
+          "text": "Can I tell you something? And you don't tell the girls.",
+          "emotion": "hesitant",
+          "next": "roof_10"
+        },
+        {
+          "id": "roof_10",
+          "speaker": "rush",
+          "text": "Yeah. Of course.",
+          "emotion": "serious",
+          "next": "roof_11"
+        },
+        {
+          "id": "roof_11",
+          "speaker": null,
+          "text": "Drew is quiet for a long time. Long enough that the streetlights come on.",
+          "emotion": "neutral",
+          "next": "roof_12"
+        },
+        {
+          "id": "roof_12",
+          "speaker": "drew",
+          "text": "I don't know what I'm supposed to be.",
+          "emotion": "vulnerable",
+          "next": "roof_13"
+        },
+        {
+          "id": "roof_13",
+          "speaker": "rush",
+          "text": "What do you mean?",
+          "emotion": "concerned",
+          "next": "roof_14"
+        },
+        {
+          "id": "roof_14",
+          "speaker": "drew",
+          "text": "Like... everyone expects something. Be the responsible one. Be the leader. Make sure everyone's okay. But what if I don't know how? What if I'm just making it up?",
+          "emotion": "raw",
+          "next": "roof_15"
+        },
+        {
+          "id": "roof_15",
+          "speaker": null,
+          "text": "This is Drew without the armor. Without the reassuring smile or the steady voice. Just a kid who's been carrying something heavier than he lets on.",
+          "emotion": "neutral",
+          "next": "roof_16"
+        },
+        {
+          "id": "roof_16",
+          "speaker": "drew",
+          "text": "I'm scared I'm going to let you all down. Not in some big way. In the small ways. The ways you don't notice until it's too late.",
+          "emotion": "quiet_fear",
+          "next": "roof_17"
+        },
+        {
+          "id": "roof_17",
+          "speaker": null,
+          "text": "The streetlight flickers. A car passes below. Normal world. Normal sounds. Extraordinary honesty.",
+          "emotion": "neutral",
+          "next": "secret_choice"
+        },
+        {
+          "id": "secret_choice",
+          "speaker": null,
+          "text": "Drew just told you the truest thing he has. What do you do with it?",
+          "emotion": "neutral",
+          "choices": [
+            {
+              "text": "Tell Drew your own fear.",
+              "nextNode": "rush_shares",
+              "effects": [
+                { "type": "SET_FLAG", "target": "shared_fear_with_drew", "value": true },
+                { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": 5 },
+                { "type": "ADD_VIRTUE", "target": "courage", "value": 2 },
+                { "type": "ADD_VIRTUE", "target": "honesty", "value": 2 },
+                { "type": "ADD_MEMORY", "target": "shared_fears_on_the_roof" }
+              ],
+              "notification": "Drew will remember that you were honest with him."
+            },
+            {
+              "text": "\"You're not going to let us down, Drew.\"",
+              "nextNode": "rush_reassures",
+              "effects": [
+                { "type": "SET_FLAG", "target": "reassured_drew", "value": true },
+                { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": 3 },
+                { "type": "ADD_VIRTUE", "target": "generosity", "value": 1 }
+              ],
+              "notification": "Drew will remember that you believed in him."
+            },
+            {
+              "text": "Change the subject.",
+              "nextNode": "rush_deflects",
+              "effects": [
+                { "type": "SET_FLAG", "target": "deflected_drew_secret", "value": true },
+                { "type": "ADD_VICE", "target": "cowardice", "value": 1 }
+              ]
+            }
+          ],
+          "timer": 15,
+          "timeoutDefault": 2
+        },
+        {
+          "id": "rush_shares",
+          "speaker": "rush",
+          "text": "...I'm scared I'm not enough either.",
+          "emotion": "vulnerable",
+          "next": "rush_shares_2"
+        },
+        {
+          "id": "rush_shares_2",
+          "speaker": null,
+          "text": "Rush doesn't plan to say it. It just comes out. Like Drew's honesty made a space for it.",
+          "emotion": "neutral",
+          "next": "rush_shares_3"
+        },
+        {
+          "id": "rush_shares_3",
+          "speaker": "rush",
+          "text": "Like... you're good at everything. And Lu's smart. And Yen is Yen. And I'm just... here.",
+          "emotion": "small",
+          "next": "rush_shares_4"
+        },
+        {
+          "id": "rush_shares_4",
+          "speaker": null,
+          "text": "Drew looks at Rush. Really looks. The way he did in the forest. Like he's deciding something.",
+          "emotion": "neutral",
+          "next": "rush_shares_5"
+        },
+        {
+          "id": "rush_shares_5",
+          "speaker": "drew",
+          "text": "Rush. Listen to me. You are not 'just here.' You're the one who shows up. Every time. When Lu needs someone to listen. When Yen is scared. When I need someone to carry the branches.",
+          "emotion": "fierce_gentle",
+          "next": "rush_shares_6"
+        },
+        {
+          "id": "rush_shares_6",
+          "speaker": "drew",
+          "text": "Showing up is the whole thing. Everything else is noise.",
+          "emotion": "certain",
+          "next": "rush_shares_7"
+        },
+        {
+          "id": "rush_shares_7",
+          "speaker": null,
+          "text": "They sit there. Two brothers on a roof. Both scared. Both honest about it. And somehow, that makes it lighter.",
+          "emotion": "neutral",
+          "next": "kimiru_privacy"
+        },
+        {
+          "id": "rush_reassures",
+          "speaker": "rush",
+          "text": "You're not going to let us down, Drew. You literally never have.",
+          "emotion": "sincere",
+          "next": "rush_reassures_2"
+        },
+        {
+          "id": "rush_reassures_2",
+          "speaker": "drew",
+          "text": "...Yeah?",
+          "emotion": "needing_to_hear_it",
+          "next": "rush_reassures_3"
+        },
+        {
+          "id": "rush_reassures_3",
+          "speaker": "rush",
+          "text": "Yeah. You carried Yen home yesterday. You gave me your money at the market. You always take the worst sleeping spot. You never even complain.",
+          "emotion": "listing_evidence",
+          "next": "rush_reassures_4"
+        },
+        {
+          "id": "rush_reassures_4",
+          "speaker": null,
+          "text": "Drew doesn't say anything for a moment. Just nods. And looks at the sky.",
+          "emotion": "neutral",
+          "next": "rush_reassures_5"
+        },
+        {
+          "id": "rush_reassures_5",
+          "speaker": "drew",
+          "text": "Thanks, Rush.",
+          "emotion": "grateful",
+          "next": "rush_reassures_6"
+        },
+        {
+          "id": "rush_reassures_6",
+          "speaker": null,
+          "text": "Two words. But Rush can hear everything inside them.",
+          "emotion": "neutral",
+          "next": "kimiru_privacy"
+        },
+        {
+          "id": "rush_deflects",
+          "speaker": "rush",
+          "text": "Hey — did you see Lu's face when she swam today?",
+          "emotion": "changing_subject",
+          "next": "rush_deflects_2"
+        },
+        {
+          "id": "rush_deflects_2",
+          "speaker": null,
+          "text": "Drew pauses. Looks at Rush. Something closes behind his eyes. Not anger. Just... a door. He opened it, and Rush didn't walk through.",
+          "emotion": "neutral",
+          "next": "rush_deflects_3"
+        },
+        {
+          "id": "rush_deflects_3",
+          "speaker": "drew",
+          "text": "Yeah. She was great.",
+          "emotion": "mask_back_on",
+          "next": "rush_deflects_4"
+        },
+        {
+          "id": "rush_deflects_4",
+          "speaker": null,
+          "text": "They talk about other things. Safe things. The moment passes. It won't come back.",
+          "emotion": "neutral",
+          "next": "kimiru_privacy"
+        }
+      ]
+    },
+    "kimiru_privacy": {
+      "background": "house_roof_night",
+      "music": "drew_theme_humming",
+      "ambience": "night_crickets",
+      "mood": "peace",
+      "characters": ["drew", "rush", "kimiru"],
+      "dialogue": [
+        {
+          "id": "kimiru_privacy",
+          "speaker": null,
+          "text": "A shape on the chimney. Green eyes catching starlight.",
+          "emotion": "neutral",
+          "next": "kimiru_priv_2"
+        },
+        {
+          "id": "kimiru_priv_2",
+          "speaker": null,
+          "text": "Kimiru is there. Of course he is. He's always there. But tonight, something is different.",
+          "emotion": "neutral",
+          "next": "kimiru_priv_3"
+        },
+        {
+          "id": "kimiru_priv_3",
+          "speaker": null,
+          "text": "He looks at Drew and Rush. Then he turns away. Faces the other direction. Gives them the sky.",
+          "emotion": "neutral",
+          "next": "kimiru_priv_4"
+        },
+        {
+          "id": "kimiru_priv_4",
+          "speaker": null,
+          "text": "Even the cat knows some things are private.",
+          "emotion": "neutral",
+          "next": "last_moment"
+        },
+        {
+          "id": "last_moment",
+          "speaker": "drew",
+          "text": "We should go in. School tomorrow.",
+          "emotion": "responsible",
+          "next": "last_moment_2"
+        },
+        {
+          "id": "last_moment_2",
+          "speaker": "rush",
+          "text": "One more minute.",
+          "emotion": "not_ready",
+          "next": "last_moment_3"
+        },
+        {
+          "id": "last_moment_3",
+          "speaker": "drew",
+          "text": "...One more minute.",
+          "emotion": "soft",
+          "next": "last_moment_4"
+        },
+        {
+          "id": "last_moment_4",
+          "speaker": null,
+          "text": "They stay. The stars are out. The world is small and safe and theirs.",
+          "emotion": "neutral",
+          "next": "last_moment_5"
+        },
+        {
+          "id": "last_moment_5",
+          "speaker": null,
+          "text": "Somewhere below, Lu turns on a lamp. Yen is already asleep. The house is warm. And up on the roof, two brothers sit in the dark and don't need to say anything at all.",
+          "emotion": "neutral",
+          "next": "last_moment_6"
+        },
+        {
+          "id": "last_moment_6",
+          "speaker": null,
+          "text": "The bond between them isn't dramatic. It isn't tested by fire or proved by sacrifice. It's just this: showing up. Sitting on a roof. Telling the truth when it's easier not to.",
+          "emotion": "neutral",
+          "next": "last_moment_7"
+        },
+        {
+          "id": "last_moment_7",
+          "speaker": null,
+          "text": "Someday, Rush will sit on this roof alone. He doesn't know that yet. He can't.",
+          "emotion": "neutral",
+          "next": "chapter_end"
+        },
+        {
+          "id": "chapter_end",
+          "speaker": null,
+          "text": "For now, there are two.",
+          "emotion": "neutral",
+          "effects": [
+            { "type": "ADD_MEMORY", "target": "drew_secret_on_roof" },
+            { "type": "ADD_MEMORY", "target": "one_more_minute" },
+            { "type": "SET_FLAG", "target": "chapter_5_complete", "value": true }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "id": "chapter_3",
+  "number": 3,
+  "title": "The Market",
+  "subtitle": "A small light is still a light.",
+  "scenes": {
+    "arrival": {
+      "background": "market_entrance",
+      "music": "market_folk",
+      "ambience": "crowd_chatter_bells",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "arrival_1",
+          "speaker": null,
+          "text": "The weekend market smells like cinnamon and old wood. Stalls stretch down the street in crooked rows. Music from somewhere. A man selling apples calls out prices nobody listens to.",
+          "emotion": "neutral",
+          "next": "arrival_2"
+        },
+        {
+          "id": "arrival_2",
+          "speaker": "yen",
+          "text": "This place is HUGE.",
+          "emotion": "amazed",
+          "next": "arrival_3"
+        },
+        {
+          "id": "arrival_3",
+          "speaker": "drew",
+          "text": "Okay. Rules. Nobody wanders off alone. We stick together, we meet back at the fountain in one hour. Got it?",
+          "emotion": "responsible",
+          "next": "arrival_4"
+        },
+        {
+          "id": "arrival_4",
+          "speaker": "lu",
+          "text": "Yes, dad.",
+          "emotion": "teasing",
+          "next": "arrival_5"
+        },
+        {
+          "id": "arrival_5",
+          "speaker": "drew",
+          "text": "Ha ha. Here.",
+          "emotion": "smirking",
+          "next": "arrival_6"
+        },
+        {
+          "id": "arrival_6",
+          "speaker": null,
+          "text": "Drew pulls out some crumpled bills. Counts them carefully. Splits them.",
+          "emotion": "neutral",
+          "next": "arrival_7"
+        },
+        {
+          "id": "arrival_7",
+          "speaker": "drew",
+          "text": "Rush — here's enough for one thing. Choose wisely.",
+          "emotion": "trusting",
+          "next": "money_choice"
+        },
+        {
+          "id": "money_choice",
+          "speaker": "rush",
+          "text": "(Drew gave me his own money. He does that.)",
+          "emotion": "grateful",
+          "choices": [
+            {
+              "text": "Buy something for Lu",
+              "nextNode": "bought_for_lu",
+              "effects": [
+                { "type": "SET_FLAG", "target": "market_bought_for_lu", "value": true },
+                { "type": "ADJUST_RELATIONSHIP", "target": "lu", "value": 5 },
+                { "type": "ADD_VIRTUE", "target": "generosity", "value": 2 },
+                { "type": "ADD_MEMORY", "target": "bought_lu_market_gift" }
+              ],
+              "notification": "Lu will remember this."
+            },
+            {
+              "text": "Buy something for myself",
+              "nextNode": "bought_for_self",
+              "effects": [
+                { "type": "SET_FLAG", "target": "market_bought_for_self", "value": true }
+              ]
+            },
+            {
+              "text": "Save the money",
+              "nextNode": "saved_money",
+              "effects": [
+                { "type": "SET_FLAG", "target": "market_saved_money", "value": true },
+                { "type": "ADD_VIRTUE", "target": "patience", "value": 1 }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bought_for_lu",
+          "speaker": null,
+          "text": "Rush finds a woven bracelet at one of the stalls. Rose-colored thread. Lu's color. He buys it without thinking too hard.",
+          "emotion": "neutral",
+          "next": "bought_for_lu_2"
+        },
+        {
+          "id": "bought_for_lu_2",
+          "speaker": "rush",
+          "text": "Here. I saw this and thought of you.",
+          "emotion": "casual",
+          "next": "bought_for_lu_3"
+        },
+        {
+          "id": "bought_for_lu_3",
+          "speaker": "lu",
+          "text": "...You spent your money on me?",
+          "emotion": "surprised",
+          "next": "bought_for_lu_4"
+        },
+        {
+          "id": "bought_for_lu_4",
+          "speaker": "rush",
+          "text": "It's not a big deal.",
+          "emotion": "shrugging",
+          "next": "bought_for_lu_5"
+        },
+        {
+          "id": "bought_for_lu_5",
+          "speaker": null,
+          "text": "It is, though. She puts it on immediately. Drew watches from across the stall. He doesn't say anything. He doesn't need to.",
+          "emotion": "neutral",
+          "next": "lantern_stall"
+        },
+        {
+          "id": "bought_for_self",
+          "speaker": null,
+          "text": "Rush finds a pocket knife with a wooden handle. Small. Practical. He likes the weight of it.",
+          "emotion": "neutral",
+          "next": "bought_for_self_2"
+        },
+        {
+          "id": "bought_for_self_2",
+          "speaker": "drew",
+          "text": "Good choice. Take care of it and it'll take care of you.",
+          "emotion": "approving",
+          "next": "lantern_stall"
+        },
+        {
+          "id": "saved_money",
+          "speaker": null,
+          "text": "Rush puts the money in his pocket. Saves it. Doesn't know what for yet.",
+          "emotion": "neutral",
+          "next": "saved_money_2"
+        },
+        {
+          "id": "saved_money_2",
+          "speaker": "drew",
+          "text": "Smart. Patience is its own reward, Rush.",
+          "emotion": "approving",
+          "next": "lantern_stall"
+        }
+      ]
+    },
+    "lantern_stall": {
+      "background": "market_lantern_stall",
+      "music": "market_folk_quieter",
+      "ambience": "crowd_distant",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen", "kimiru"],
+      "dialogue": [
+        {
+          "id": "lantern_stall",
+          "speaker": null,
+          "text": "The stall is at the end of the row. Easy to miss. An old woman sits behind a table covered in lanterns — brass ones, glass ones, paper ones. All shapes. All sizes.",
+          "emotion": "neutral",
+          "next": "lantern_2"
+        },
+        {
+          "id": "lantern_2",
+          "speaker": "yen",
+          "text": "Look at all the lights!",
+          "emotion": "wonder",
+          "next": "lantern_3"
+        },
+        {
+          "id": "lantern_3",
+          "speaker": null,
+          "text": "The old woman looks up. Her eyes find Drew immediately. She looks at him the way you look at something you recognize.",
+          "emotion": "neutral",
+          "next": "lantern_4"
+        },
+        {
+          "id": "lantern_4",
+          "speaker": "lu",
+          "text": "Drew, she's staring at you.",
+          "emotion": "uncomfortable",
+          "next": "lantern_5"
+        },
+        {
+          "id": "lantern_5",
+          "speaker": "drew",
+          "text": "She's probably just... yeah. That's a little weird.",
+          "emotion": "nervous_laugh",
+          "next": "lantern_6"
+        },
+        {
+          "id": "lantern_6",
+          "speaker": null,
+          "text": "Drew approaches the table anyway. He picks up a small, plain thing. Not a lantern exactly. A holder — iron, simple, with a groove for a wick.",
+          "emotion": "neutral",
+          "next": "lantern_7"
+        },
+        {
+          "id": "lantern_7",
+          "speaker": "drew",
+          "text": "What's this one?",
+          "emotion": "curious",
+          "next": "lantern_8"
+        },
+        {
+          "id": "lantern_8",
+          "speaker": null,
+          "text": "The old woman smiles. It's not a warm smile. It's a knowing one.",
+          "emotion": "neutral",
+          "next": "lantern_9"
+        },
+        {
+          "id": "lantern_9",
+          "speaker": null,
+          "text": "\"A rushlight. People used them when they couldn't afford real candles. Animal fat and a reed wick. The poorest light there is.\"",
+          "emotion": "neutral",
+          "next": "lantern_10"
+        },
+        {
+          "id": "lantern_10",
+          "speaker": "drew",
+          "text": "How much?",
+          "emotion": "decided",
+          "next": "lantern_11"
+        },
+        {
+          "id": "lantern_11",
+          "speaker": null,
+          "text": "She names a price. Drew pays without haggling. The others watch.",
+          "emotion": "neutral",
+          "next": "lantern_12"
+        },
+        {
+          "id": "lantern_12",
+          "speaker": "rush",
+          "text": "Drew, that thing is kind of ugly.",
+          "emotion": "honest",
+          "next": "lantern_13"
+        },
+        {
+          "id": "lantern_13",
+          "speaker": "drew",
+          "text": "Yeah. But think about it. Somebody made this because they needed light and couldn't afford it. They used what they had. Animal fat. A reed. And they made it work.",
+          "emotion": "thoughtful",
+          "next": "lantern_14"
+        },
+        {
+          "id": "lantern_14",
+          "speaker": "drew",
+          "text": "A small light is still a light.",
+          "emotion": "quiet_conviction",
+          "next": "lantern_15"
+        },
+        {
+          "id": "lantern_15",
+          "speaker": null,
+          "text": "He holds it up. Iron and fat and a reed. The ugliest light in the market. Drew looks at it like it's the only thing worth buying.",
+          "emotion": "neutral",
+          "next": "kimiru_woman"
+        },
+        {
+          "id": "kimiru_woman",
+          "speaker": null,
+          "text": "A black shape leaps onto the table. Kimiru. The old woman doesn't flinch.",
+          "emotion": "neutral",
+          "next": "kimiru_woman_2"
+        },
+        {
+          "id": "kimiru_woman_2",
+          "speaker": null,
+          "text": "She leans down to the cat. Whispers something. Her lips move but the words don't carry.",
+          "emotion": "neutral",
+          "next": "kimiru_woman_3"
+        },
+        {
+          "id": "kimiru_woman_3",
+          "speaker": "rush",
+          "text": "Is she... talking to the cat?",
+          "emotion": "confused",
+          "next": "kimiru_woman_4"
+        },
+        {
+          "id": "kimiru_woman_4",
+          "speaker": "lu",
+          "text": "People talk to cats, Rush.",
+          "emotion": "dismissive",
+          "next": "kimiru_woman_5"
+        },
+        {
+          "id": "kimiru_woman_5",
+          "speaker": null,
+          "text": "Kimiru listens. His ears flatten. Then he jumps down and walks away without looking back.",
+          "emotion": "neutral",
+          "next": "kimiru_woman_6"
+        },
+        {
+          "id": "kimiru_woman_6",
+          "speaker": null,
+          "text": "The old woman watches Drew walk away with the rushlight. She mouths two words. You can't read them. You want to.",
+          "emotion": "neutral",
+          "next": "heading_home"
+        }
+      ]
+    },
+    "heading_home": {
+      "background": "market_exit_sunset",
+      "music": "gentle_acoustic",
+      "ambience": "evening_birds",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "heading_home",
+          "speaker": null,
+          "text": "Walking home. The sun is low. Drew carries the rushlight in his jacket pocket.",
+          "emotion": "neutral",
+          "next": "home_2"
+        },
+        {
+          "id": "home_2",
+          "speaker": "yen",
+          "text": "My feet hurt.",
+          "emotion": "whining",
+          "next": "home_3"
+        },
+        {
+          "id": "home_3",
+          "speaker": "drew",
+          "text": "Hop on.",
+          "emotion": "routine",
+          "next": "home_4"
+        },
+        {
+          "id": "home_4",
+          "speaker": null,
+          "text": "He crouches. Yen climbs onto his back. This is a thing they do. This is a thing that happens all the time.",
+          "emotion": "neutral",
+          "next": "home_5"
+        },
+        {
+          "id": "home_5",
+          "speaker": "lu",
+          "text": "Drew, why did that woman look at you like that?",
+          "emotion": "still_thinking_about_it",
+          "next": "home_6"
+        },
+        {
+          "id": "home_6",
+          "speaker": "drew",
+          "text": "I don't know. Maybe I remind her of someone.",
+          "emotion": "shrugging_it_off",
+          "next": "home_7"
+        },
+        {
+          "id": "home_7",
+          "speaker": null,
+          "text": "He says it lightly. But his hand goes to the pocket with the rushlight. And stays there.",
+          "emotion": "neutral",
+          "next": "home_8"
+        },
+        {
+          "id": "home_8",
+          "speaker": null,
+          "text": "Four kids walking home in the last light. The kind of evening that feels like it could last forever. It can't. Nothing can.",
+          "emotion": "neutral",
+          "effects": [
+            { "type": "ADD_MEMORY", "target": "drew_bought_the_rushlight" },
+            { "type": "ADD_MEMORY", "target": "old_woman_stared_at_drew" },
+            { "type": "SET_FLAG", "target": "has_rushlight", "value": true },
+            { "type": "SET_FLAG", "target": "chapter_3_complete", "value": true }
+          ]
+        }
+      ]
+    }
+  }
+}

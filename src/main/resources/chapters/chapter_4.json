@@ -1,0 +1,480 @@
+{
+  "id": "chapter_4",
+  "number": 4,
+  "title": "The Lesson",
+  "subtitle": "Being good at something doesn't make you good.",
+  "scenes": {
+    "the_creek": {
+      "background": "creek_sunny",
+      "music": "upbeat_acoustic",
+      "ambience": "water_flowing_birds",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "creek_1",
+          "speaker": "drew",
+          "text": "Okay. Arms out. Lean forward — no, forward. Trust the water.",
+          "emotion": "coaching",
+          "next": "creek_2"
+        },
+        {
+          "id": "creek_2",
+          "speaker": "rush",
+          "text": "I AM leaning forward!",
+          "emotion": "frustrated",
+          "next": "creek_3"
+        },
+        {
+          "id": "creek_3",
+          "speaker": "drew",
+          "text": "You're leaning sideways, Rush.",
+          "emotion": "amused",
+          "next": "creek_4"
+        },
+        {
+          "id": "creek_4",
+          "speaker": null,
+          "text": "Splash. Rush goes under. Comes up sputtering.",
+          "emotion": "neutral",
+          "next": "creek_5"
+        },
+        {
+          "id": "creek_5",
+          "speaker": "rush",
+          "text": "I hate this.",
+          "emotion": "defeated",
+          "next": "creek_6"
+        },
+        {
+          "id": "creek_6",
+          "speaker": "drew",
+          "text": "No you don't. You hate not being good at it yet. That's different.",
+          "emotion": "patient",
+          "next": "creek_7"
+        },
+        {
+          "id": "creek_7",
+          "speaker": "drew",
+          "text": "Again.",
+          "emotion": "steady",
+          "next": "creek_8"
+        },
+        {
+          "id": "creek_8",
+          "speaker": null,
+          "text": "Rush tries again. And again. Drew stands in the water beside him every single time. Never impatient. Never checking a watch that doesn't exist.",
+          "emotion": "neutral",
+          "next": "creek_9"
+        },
+        {
+          "id": "creek_9",
+          "speaker": "drew",
+          "text": "Almost. You've almost got it.",
+          "emotion": "encouraging",
+          "next": "creek_10"
+        },
+        {
+          "id": "creek_10",
+          "speaker": null,
+          "text": "He says it every time. And every time, he means it.",
+          "emotion": "neutral",
+          "next": "lu_arrives"
+        }
+      ]
+    },
+    "lu_arrives": {
+      "background": "creek_sunny",
+      "music": "upbeat_acoustic",
+      "ambience": "water_flowing_birds",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "lu_arrives",
+          "speaker": "lu",
+          "text": "Can I try?",
+          "emotion": "eager",
+          "next": "lu_arrives_2"
+        },
+        {
+          "id": "lu_arrives_2",
+          "speaker": "drew",
+          "text": "Go for it.",
+          "emotion": "welcoming",
+          "next": "lu_arrives_3"
+        },
+        {
+          "id": "lu_arrives_3",
+          "speaker": null,
+          "text": "Lu steps into the water. Arms out. Lean forward. Kick.",
+          "emotion": "neutral",
+          "next": "lu_arrives_4"
+        },
+        {
+          "id": "lu_arrives_4",
+          "speaker": null,
+          "text": "She swims. First try. Clean, steady strokes. Like she was born for it.",
+          "emotion": "neutral",
+          "next": "lu_arrives_5"
+        },
+        {
+          "id": "lu_arrives_5",
+          "speaker": "lu",
+          "text": "Like this?",
+          "emotion": "genuinely_asking",
+          "next": "lu_arrives_6"
+        },
+        {
+          "id": "lu_arrives_6",
+          "speaker": "drew",
+          "text": "...Yeah. Exactly like that.",
+          "emotion": "impressed",
+          "next": "lu_arrives_7"
+        },
+        {
+          "id": "lu_arrives_7",
+          "speaker": "yen",
+          "text": "Lu's a fish! Lu's a fish!",
+          "emotion": "delighted",
+          "next": "jealousy_choice"
+        },
+        {
+          "id": "jealousy_choice",
+          "speaker": null,
+          "text": "Rush stands in the shallows. Water up to his knees. Watching Lu glide through the creek like it's nothing. He's been trying for an hour.",
+          "emotion": "neutral",
+          "choices": [
+            {
+              "text": "\"Nice, Lu. You're a natural.\"",
+              "nextNode": "rush_kind",
+              "effects": [
+                { "type": "SET_FLAG", "target": "cheered_lu_swimming", "value": true },
+                { "type": "ADJUST_RELATIONSHIP", "target": "lu", "value": 3 },
+                { "type": "ADD_VIRTUE", "target": "generosity", "value": 2 },
+                { "type": "ADD_VIRTUE", "target": "honesty", "value": 1 }
+              ],
+              "notification": "Drew noticed your kindness."
+            },
+            {
+              "text": "Say nothing. Look away.",
+              "nextNode": "rush_quiet",
+              "effects": [
+                { "type": "SET_FLAG", "target": "jealous_of_lu_swimming", "value": true },
+                { "type": "ADD_VICE", "target": "bitterness", "value": 1 }
+              ],
+              "silent": true
+            },
+            {
+              "text": "\"Whatever. Some people just get lucky.\"",
+              "nextNode": "rush_bitter",
+              "effects": [
+                { "type": "SET_FLAG", "target": "bitter_about_lu_swimming", "value": true },
+                { "type": "ADJUST_RELATIONSHIP", "target": "lu", "value": -3 },
+                { "type": "ADD_VICE", "target": "bitterness", "value": 2 },
+                { "type": "ADD_VICE", "target": "pride", "value": 1 }
+              ],
+              "notification": "Lu heard that."
+            }
+          ]
+        },
+        {
+          "id": "rush_kind",
+          "speaker": "rush",
+          "text": "Nice, Lu. You're a natural.",
+          "emotion": "genuine",
+          "next": "rush_kind_2"
+        },
+        {
+          "id": "rush_kind_2",
+          "speaker": "lu",
+          "text": "Thanks, Rush.",
+          "emotion": "touched",
+          "next": "rush_kind_3"
+        },
+        {
+          "id": "rush_kind_3",
+          "speaker": null,
+          "text": "Drew watches. He doesn't say anything. But he puts his hand on Rush's shoulder. Just for a second. That's worth more than words.",
+          "emotion": "neutral",
+          "next": "drew_aside"
+        },
+        {
+          "id": "rush_quiet",
+          "speaker": null,
+          "text": "Rush turns away. Kicks a rock into the water. Lu's smile falters — just slightly. She keeps swimming, but the joy dims.",
+          "emotion": "neutral",
+          "next": "drew_aside"
+        },
+        {
+          "id": "rush_bitter",
+          "speaker": "rush",
+          "text": "Whatever. Some people just get lucky.",
+          "emotion": "bitter",
+          "next": "rush_bitter_2"
+        },
+        {
+          "id": "rush_bitter_2",
+          "speaker": null,
+          "text": "Lu stops swimming. Stands in the water. Doesn't say anything. Doesn't need to.",
+          "emotion": "neutral",
+          "next": "rush_bitter_3"
+        },
+        {
+          "id": "rush_bitter_3",
+          "speaker": "drew",
+          "text": "Rush. Walk with me.",
+          "emotion": "firm",
+          "next": "drew_aside"
+        }
+      ]
+    },
+    "drew_aside": {
+      "background": "creek_bank",
+      "music": "gentle_acoustic",
+      "ambience": "water_distant",
+      "mood": "warm",
+      "characters": ["drew", "rush", "kimiru"],
+      "dialogue": [
+        {
+          "id": "drew_aside",
+          "speaker": null,
+          "text": "Drew walks Rush away from the creek. Sits on a rock. Pats the one next to him.",
+          "emotion": "neutral",
+          "next": "aside_2"
+        },
+        {
+          "id": "aside_2",
+          "speaker": "drew",
+          "text": "Sit.",
+          "emotion": "calm",
+          "next": "aside_3"
+        },
+        {
+          "id": "aside_3",
+          "speaker": null,
+          "text": "Rush sits. The creek babbles behind them. Lu and Yen's laughter carries on the wind.",
+          "emotion": "neutral",
+          "next": "aside_4"
+        },
+        {
+          "id": "aside_4",
+          "speaker": "drew",
+          "text": "You know what's easy? Being jealous. Costs nothing. Takes no effort. You just sit in it and let it rot.",
+          "emotion": "direct",
+          "next": "aside_5"
+        },
+        {
+          "id": "aside_5",
+          "speaker": "rush",
+          "text": "I'm not—",
+          "emotion": "defensive",
+          "next": "aside_6"
+        },
+        {
+          "id": "aside_6",
+          "speaker": "drew",
+          "text": "I'm not saying you are. I'm saying it's easy to be. And you're not someone who does the easy thing. At least — you don't have to be.",
+          "emotion": "honest",
+          "next": "aside_7"
+        },
+        {
+          "id": "aside_7",
+          "speaker": null,
+          "text": "He picks up a stone. Turns it over.",
+          "emotion": "neutral",
+          "next": "aside_8"
+        },
+        {
+          "id": "aside_8",
+          "speaker": "drew",
+          "text": "Being good at something doesn't make you good. Being kind when someone's better at something than you — that does.",
+          "emotion": "serious",
+          "next": "aside_9"
+        },
+        {
+          "id": "aside_9",
+          "speaker": null,
+          "text": "He throws the stone. It skips twice and sinks.",
+          "emotion": "neutral",
+          "next": "aside_10"
+        },
+        {
+          "id": "aside_10",
+          "speaker": "drew",
+          "text": "Two skips. See? I'm terrible at that. Lu would probably get five.",
+          "emotion": "self_deprecating",
+          "next": "aside_11"
+        },
+        {
+          "id": "aside_11",
+          "speaker": "rush",
+          "text": "Probably six.",
+          "emotion": "small_smile",
+          "next": "aside_12"
+        },
+        {
+          "id": "aside_12",
+          "speaker": "drew",
+          "text": "Probably. And you know what? Good for her.",
+          "emotion": "meaning_it",
+          "next": "kimiru_endorses"
+        },
+        {
+          "id": "kimiru_endorses",
+          "speaker": null,
+          "text": "A black shape on the rock behind them. Sitting. Tail wrapped around paws. How long has he been there?",
+          "emotion": "neutral",
+          "next": "kimiru_endorses_2"
+        },
+        {
+          "id": "kimiru_endorses_2",
+          "speaker": "kimiru",
+          "text": "He's right, you know.",
+          "emotion": "measured",
+          "next": "kimiru_endorses_3"
+        },
+        {
+          "id": "kimiru_endorses_3",
+          "speaker": "rush",
+          "text": "Did... did the cat just talk?",
+          "emotion": "shocked",
+          "next": "kimiru_endorses_4"
+        },
+        {
+          "id": "kimiru_endorses_4",
+          "speaker": "drew",
+          "text": "...What?",
+          "emotion": "confused",
+          "next": "kimiru_endorses_5"
+        },
+        {
+          "id": "kimiru_endorses_5",
+          "speaker": "kimiru",
+          "text": "Meow.",
+          "emotion": "deadpan",
+          "next": "kimiru_endorses_6"
+        },
+        {
+          "id": "kimiru_endorses_6",
+          "speaker": null,
+          "text": "Kimiru blinks slowly. Turns. Walks away with extreme dignity.",
+          "emotion": "neutral",
+          "next": "kimiru_endorses_7"
+        },
+        {
+          "id": "kimiru_endorses_7",
+          "speaker": "drew",
+          "text": "That cat is weird.",
+          "emotion": "watching_it_leave",
+          "next": "kimiru_endorses_8"
+        },
+        {
+          "id": "kimiru_endorses_8",
+          "speaker": "rush",
+          "text": "Yeah...",
+          "emotion": "unsettled",
+          "next": "kimiru_endorses_9"
+        },
+        {
+          "id": "kimiru_endorses_9",
+          "speaker": null,
+          "text": "Rush heard it. He knows he heard it. But Drew didn't. And Kimiru isn't talking. First time the cat endorsed a human's words. Won't be the last.",
+          "emotion": "neutral",
+          "next": "return_to_creek"
+        }
+      ]
+    },
+    "return_to_creek": {
+      "background": "creek_sunset",
+      "music": "warm_strings",
+      "ambience": "evening_water_crickets",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "return_to_creek",
+          "speaker": null,
+          "text": "They go back to the creek. The sun is lower. Lu is teaching Yen to float.",
+          "emotion": "neutral",
+          "next": "return_2"
+        },
+        {
+          "id": "return_2",
+          "speaker": "drew",
+          "text": "Come on. One more try.",
+          "emotion": "encouraging",
+          "next": "return_3"
+        },
+        {
+          "id": "return_3",
+          "speaker": null,
+          "text": "Rush steps into the water. Arms out. Lean forward. Trust the water.",
+          "emotion": "neutral",
+          "next": "return_4"
+        },
+        {
+          "id": "return_4",
+          "speaker": null,
+          "text": "He doesn't swim. Not really. More of a controlled fall forward. But he moves. Three strokes before he sinks.",
+          "emotion": "neutral",
+          "next": "return_5"
+        },
+        {
+          "id": "return_5",
+          "speaker": "drew",
+          "text": "YES! Rush! Three strokes!",
+          "emotion": "genuinely_excited",
+          "next": "return_6"
+        },
+        {
+          "id": "return_6",
+          "speaker": null,
+          "text": "Drew is actually cheering. Pumping his fist. You'd think Rush won something. Three ugly strokes in a creek. Drew acts like it's the Olympics.",
+          "emotion": "neutral",
+          "next": "return_7"
+        },
+        {
+          "id": "return_7",
+          "speaker": "lu",
+          "text": "Rush! You did it!",
+          "emotion": "cheering",
+          "next": "return_8"
+        },
+        {
+          "id": "return_8",
+          "speaker": "yen",
+          "text": "AGAIN! AGAIN!",
+          "emotion": "bouncing",
+          "next": "return_9"
+        },
+        {
+          "id": "return_9",
+          "speaker": null,
+          "text": "Rush is standing in the creek, dripping, out of breath. And for a moment, he's not thinking about what he can't do. He's thinking about what he just did.",
+          "emotion": "neutral",
+          "next": "return_10"
+        },
+        {
+          "id": "return_10",
+          "speaker": null,
+          "text": "Drew sees it. That shift. The moment someone stops measuring themselves against someone else and just... tries.",
+          "emotion": "neutral",
+          "next": "return_11"
+        },
+        {
+          "id": "return_11",
+          "speaker": null,
+          "text": "Four kids in a creek at sunset. Wet. Laughing. One of them needed to learn something today. He learned it.",
+          "emotion": "neutral",
+          "effects": [
+            { "type": "ADD_MEMORY", "target": "drew_taught_rush_swimming" },
+            { "type": "ADD_MEMORY", "target": "drews_lesson_about_kindness" },
+            { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": 3 },
+            { "type": "SET_FLAG", "target": "chapter_4_complete", "value": true }
+          ]
+        }
+      ]
+    }
+  }
+}

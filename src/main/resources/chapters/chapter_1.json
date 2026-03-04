@@ -1,0 +1,534 @@
+{
+  "id": "chapter_1",
+  "number": 1,
+  "title": "The Fort",
+  "subtitle": "Some things you build together stay built.",
+  "scenes": {
+    "the_clearing": {
+      "background": "forest_clearing",
+      "music": "gentle_acoustic",
+      "ambience": "birds_wind_leaves",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "clearing_1",
+          "speaker": "drew",
+          "text": "Okay. We need four good branches — long ones, thick as your arm. Rush, you're with me.",
+          "emotion": "determined",
+          "next": "clearing_2"
+        },
+        {
+          "id": "clearing_2",
+          "speaker": "rush",
+          "text": "Why do I always have to carry stuff?",
+          "emotion": "annoyed",
+          "next": "clearing_3"
+        },
+        {
+          "id": "clearing_3",
+          "speaker": "drew",
+          "text": "Because you're strong enough to. That's not a punishment, that's a compliment.",
+          "emotion": "warm",
+          "next": "clearing_4"
+        },
+        {
+          "id": "clearing_4",
+          "speaker": "lu",
+          "text": "I found a good one! It's got moss on it. Can we keep the moss?",
+          "emotion": "excited",
+          "next": "clearing_5"
+        },
+        {
+          "id": "clearing_5",
+          "speaker": "drew",
+          "text": "We can keep the moss.",
+          "emotion": "amused",
+          "next": "clearing_6"
+        },
+        {
+          "id": "clearing_6",
+          "speaker": "yen",
+          "text": "I found a rock.",
+          "emotion": "proud",
+          "next": "clearing_7"
+        },
+        {
+          "id": "clearing_7",
+          "speaker": "drew",
+          "text": "That is a very good rock, Yen.",
+          "emotion": "gentle",
+          "next": "clearing_8"
+        },
+        {
+          "id": "clearing_8",
+          "speaker": null,
+          "text": "Drew doesn't laugh. He takes the rock seriously. He takes her seriously.",
+          "emotion": "neutral",
+          "next": "building_1"
+        }
+      ]
+    },
+    "building": {
+      "background": "forest_fort_construction",
+      "music": "gentle_acoustic",
+      "ambience": "birds_wood_cracking",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "building_1",
+          "speaker": "drew",
+          "text": "Okay, Rush. Come here. I'll show you how to tie a proper lashing.",
+          "emotion": "focused",
+          "next": "building_2"
+        },
+        {
+          "id": "building_2",
+          "speaker": "drew",
+          "text": "Under, around, pull tight. Not too tight — you'll snap the branch. Just firm enough to hold.",
+          "emotion": "patient",
+          "next": "building_3"
+        },
+        {
+          "id": "building_3",
+          "speaker": "rush",
+          "text": "Like this?",
+          "emotion": "uncertain",
+          "next": "building_4"
+        },
+        {
+          "id": "building_4",
+          "speaker": "drew",
+          "text": "Almost. Your loop's too loose. Here—",
+          "emotion": "patient",
+          "next": "building_5"
+        },
+        {
+          "id": "building_5",
+          "speaker": null,
+          "text": "Drew's hands guide Rush's. Not grabbing. Not doing it for him. Just... showing.",
+          "emotion": "neutral",
+          "next": "building_6"
+        },
+        {
+          "id": "building_6",
+          "speaker": "drew",
+          "text": "There. See? You did that. Not me.",
+          "emotion": "proud",
+          "next": "building_7"
+        },
+        {
+          "id": "building_7",
+          "speaker": "rush",
+          "text": "It's kind of crooked.",
+          "emotion": "sheepish",
+          "next": "building_8"
+        },
+        {
+          "id": "building_8",
+          "speaker": "drew",
+          "text": "Crooked things hold. Perfect things break.",
+          "emotion": "thoughtful",
+          "next": "building_9"
+        },
+        {
+          "id": "building_9",
+          "speaker": null,
+          "text": "Rush won't understand that line until much later.",
+          "emotion": "neutral",
+          "next": "building_10"
+        },
+        {
+          "id": "building_10",
+          "speaker": "lu",
+          "text": "I decorated the entrance! Look — I wove the moss between the sticks.",
+          "emotion": "proud",
+          "next": "building_11"
+        },
+        {
+          "id": "building_11",
+          "speaker": "drew",
+          "text": "Lu, that's actually beautiful.",
+          "emotion": "genuine_surprise",
+          "next": "building_12"
+        },
+        {
+          "id": "building_12",
+          "speaker": null,
+          "text": "He means it. Drew always means it.",
+          "emotion": "neutral",
+          "next": "tree_discovery"
+        }
+      ]
+    },
+    "tree_discovery": {
+      "background": "forest_old_tree",
+      "music": "gentle_acoustic_fading",
+      "ambience": "wind_through_trees",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "dialogue": [
+        {
+          "id": "tree_discovery",
+          "speaker": "lu",
+          "text": "Hey. Come look at this.",
+          "emotion": "curious",
+          "next": "tree_2"
+        },
+        {
+          "id": "tree_2",
+          "speaker": null,
+          "text": "There's a symbol carved into the old oak behind the fort. Deep grooves. Not fresh, but not ancient either.",
+          "emotion": "neutral",
+          "next": "tree_3"
+        },
+        {
+          "id": "tree_3",
+          "speaker": "rush",
+          "text": "What is that? A circle with... lines through it?",
+          "emotion": "curious",
+          "next": "tree_4"
+        },
+        {
+          "id": "tree_4",
+          "speaker": "drew",
+          "text": "Probably just kids messing around. Don't worry about it.",
+          "emotion": "dismissive",
+          "next": "tree_5"
+        },
+        {
+          "id": "tree_5",
+          "speaker": null,
+          "text": "Drew runs his fingers over the grooves. His hand stays there a moment too long.",
+          "emotion": "neutral",
+          "next": "tree_6"
+        },
+        {
+          "id": "tree_6",
+          "speaker": "yen",
+          "text": "It's pretty.",
+          "emotion": "innocent",
+          "next": "tree_7"
+        },
+        {
+          "id": "tree_7",
+          "speaker": "drew",
+          "text": "Yeah. Sure. Come on — fort's not gonna finish itself.",
+          "emotion": "covering",
+          "next": "fort_complete"
+        }
+      ]
+    },
+    "fort_complete": {
+      "background": "forest_fort_finished",
+      "music": "warm_strings",
+      "ambience": "late_afternoon_forest",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen", "kimiru"],
+      "dialogue": [
+        {
+          "id": "fort_complete",
+          "speaker": null,
+          "text": "The fort is done. It's not perfect. The walls lean. The roof has gaps. But it's theirs.",
+          "emotion": "neutral",
+          "next": "fort_2"
+        },
+        {
+          "id": "fort_2",
+          "speaker": "yen",
+          "text": "It's the best fort in the whole world.",
+          "emotion": "awe",
+          "next": "fort_3"
+        },
+        {
+          "id": "fort_3",
+          "speaker": "drew",
+          "text": "It is, actually.",
+          "emotion": "content",
+          "next": "fort_4"
+        },
+        {
+          "id": "fort_4",
+          "speaker": "lu",
+          "text": "We should name it.",
+          "emotion": "excited",
+          "next": "fort_5"
+        },
+        {
+          "id": "fort_5",
+          "speaker": "drew",
+          "text": "Rush gets to name it. He tied the frame together.",
+          "emotion": "warm",
+          "next": "fort_name_choice"
+        },
+        {
+          "id": "fort_name_choice",
+          "speaker": "rush",
+          "text": "What should we call it?",
+          "emotion": "thinking",
+          "choices": [
+            {
+              "text": "Fort Unbreakable",
+              "nextNode": "fort_name_1",
+              "effects": [
+                { "type": "SET_FLAG", "target": "fort_name", "value": "unbreakable" },
+                { "type": "ADD_VIRTUE", "target": "courage", "value": 1 }
+              ]
+            },
+            {
+              "text": "The Hideaway",
+              "nextNode": "fort_name_2",
+              "effects": [
+                { "type": "SET_FLAG", "target": "fort_name", "value": "hideaway" },
+                { "type": "ADD_VIRTUE", "target": "patience", "value": 1 }
+              ]
+            },
+            {
+              "text": "Drew's Place",
+              "nextNode": "fort_name_3",
+              "effects": [
+                { "type": "SET_FLAG", "target": "fort_name", "value": "drews_place" },
+                { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": 5 },
+                { "type": "ADD_MEMORY", "target": "named_fort_after_drew" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fort_name_1",
+          "speaker": "drew",
+          "text": "Fort Unbreakable. I like that. Nothing gets in unless we say so.",
+          "emotion": "approving",
+          "next": "fort_scared_setup"
+        },
+        {
+          "id": "fort_name_2",
+          "speaker": "drew",
+          "text": "The Hideaway. Yeah. Somewhere that's just ours.",
+          "emotion": "soft",
+          "next": "fort_scared_setup"
+        },
+        {
+          "id": "fort_name_3",
+          "speaker": "drew",
+          "text": "Drew's Place? Come on. It's all of ours.",
+          "emotion": "embarrassed",
+          "next": "fort_name_3b"
+        },
+        {
+          "id": "fort_name_3b",
+          "speaker": "lu",
+          "text": "He's blushing.",
+          "emotion": "teasing",
+          "next": "fort_name_3c"
+        },
+        {
+          "id": "fort_name_3c",
+          "speaker": "drew",
+          "text": "I am not.",
+          "emotion": "blushing",
+          "next": "fort_name_3d"
+        },
+        {
+          "id": "fort_name_3d",
+          "speaker": null,
+          "text": "He absolutely is.",
+          "emotion": "neutral",
+          "next": "fort_scared_setup"
+        },
+        {
+          "id": "fort_scared_setup",
+          "speaker": null,
+          "text": "A sound cracks through the trees. Something heavy moving through the underbrush.",
+          "emotion": "neutral",
+          "next": "fort_scared_1"
+        },
+        {
+          "id": "fort_scared_1",
+          "speaker": "yen",
+          "text": "What was that?",
+          "emotion": "scared",
+          "next": "fort_scared_2"
+        },
+        {
+          "id": "fort_scared_2",
+          "speaker": null,
+          "text": "Yen's eyes go wide. Her lip trembles. She reaches for Drew.",
+          "emotion": "neutral",
+          "next": "fort_scared_3"
+        },
+        {
+          "id": "fort_scared_3",
+          "speaker": "drew",
+          "text": "Hey. Hey. Come here.",
+          "emotion": "reassuring",
+          "next": "fort_scared_4"
+        },
+        {
+          "id": "fort_scared_4",
+          "speaker": null,
+          "text": "Drew lifts Yen onto his shoulders. She grabs his hair. He doesn't wince.",
+          "emotion": "neutral",
+          "next": "fort_scared_5"
+        },
+        {
+          "id": "fort_scared_5",
+          "speaker": "drew",
+          "text": "Up here, you're taller than anything in these woods. See? Nothing to be scared of.",
+          "emotion": "gentle",
+          "next": "fort_scared_6"
+        },
+        {
+          "id": "fort_scared_6",
+          "speaker": "yen",
+          "text": "I can see the house from here!",
+          "emotion": "delighted",
+          "next": "fort_scared_7"
+        },
+        {
+          "id": "fort_scared_7",
+          "speaker": "drew",
+          "text": "See? You're the lookout now. Nothing gets past you.",
+          "emotion": "warm",
+          "next": "scared_choice"
+        },
+        {
+          "id": "scared_choice",
+          "speaker": "rush",
+          "text": "(Drew always knows what to say.)",
+          "emotion": "admiring",
+          "choices": [
+            {
+              "text": "\"Drew... are you ever scared of anything?\"",
+              "nextNode": "drew_scared_honest",
+              "effects": [
+                { "type": "SET_FLAG", "target": "asked_drew_scared", "value": true },
+                { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": 3 },
+                { "type": "ADD_MEMORY", "target": "asked_drew_about_fear" }
+              ]
+            },
+            {
+              "text": "\"You're really good at that.\"",
+              "nextNode": "drew_compliment",
+              "effects": [
+                { "type": "SET_FLAG", "target": "complimented_drew_parenting", "value": true },
+                { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": 2 }
+              ]
+            },
+            {
+              "text": "Say nothing. Just watch.",
+              "nextNode": "drew_watched",
+              "effects": [
+                { "type": "SET_FLAG", "target": "watched_drew_silently", "value": true },
+                { "type": "ADD_VIRTUE", "target": "patience", "value": 1 }
+              ],
+              "silent": true
+            }
+          ]
+        },
+        {
+          "id": "drew_scared_honest",
+          "speaker": "drew",
+          "text": "...",
+          "emotion": "caught_off_guard",
+          "next": "drew_scared_2"
+        },
+        {
+          "id": "drew_scared_2",
+          "speaker": null,
+          "text": "Drew looks at Rush. Really looks. Like he's deciding how honest to be.",
+          "emotion": "neutral",
+          "next": "drew_scared_3"
+        },
+        {
+          "id": "drew_scared_3",
+          "speaker": "drew",
+          "text": "Yeah. I'm scared of not being enough.",
+          "emotion": "vulnerable",
+          "next": "drew_scared_4"
+        },
+        {
+          "id": "drew_scared_4",
+          "speaker": null,
+          "text": "He says it simply. Like it's obvious. Like it's the most normal thing in the world.",
+          "emotion": "neutral",
+          "next": "drew_scared_5"
+        },
+        {
+          "id": "drew_scared_5",
+          "speaker": "drew",
+          "text": "Don't tell the girls.",
+          "emotion": "half_smile",
+          "next": "kimiru_watches"
+        },
+        {
+          "id": "drew_compliment",
+          "speaker": "drew",
+          "text": "Good at what?",
+          "emotion": "confused",
+          "next": "drew_compliment_2"
+        },
+        {
+          "id": "drew_compliment_2",
+          "speaker": "rush",
+          "text": "Making people not scared.",
+          "emotion": "sincere",
+          "next": "drew_compliment_3"
+        },
+        {
+          "id": "drew_compliment_3",
+          "speaker": null,
+          "text": "Drew doesn't answer for a moment. Then he puts his hand on Rush's head. Just for a second.",
+          "emotion": "neutral",
+          "next": "drew_compliment_4"
+        },
+        {
+          "id": "drew_compliment_4",
+          "speaker": "drew",
+          "text": "Thanks, buddy.",
+          "emotion": "touched",
+          "next": "kimiru_watches"
+        },
+        {
+          "id": "drew_watched",
+          "speaker": null,
+          "text": "Rush doesn't say anything. He just watches Drew hold Yen on his shoulders, making her laugh, turning a scared moment into a safe one. Rush files it away without knowing why.",
+          "emotion": "neutral",
+          "next": "kimiru_watches"
+        },
+        {
+          "id": "kimiru_watches",
+          "speaker": null,
+          "text": "Something moves in the branch above. Two green eyes. Watching.",
+          "emotion": "neutral",
+          "next": "kimiru_watches_2"
+        },
+        {
+          "id": "kimiru_watches_2",
+          "speaker": "kimiru",
+          "text": "...",
+          "emotion": "observing",
+          "next": "kimiru_watches_3"
+        },
+        {
+          "id": "kimiru_watches_3",
+          "speaker": null,
+          "text": "Kimiru says nothing. Just watches the four of them, together, in the fort they built. His tail curls around the branch. His eyes don't blink.",
+          "emotion": "neutral",
+          "next": "chapter_end"
+        },
+        {
+          "id": "chapter_end",
+          "speaker": null,
+          "text": "The sun is setting through the gaps in the fort roof. Four kids. One crooked fort. One silent cat. The kind of afternoon you don't know you'll miss until it's gone.",
+          "emotion": "neutral",
+          "effects": [
+            { "type": "ADD_MEMORY", "target": "built_the_fort" },
+            { "type": "SET_FLAG", "target": "chapter_1_complete", "value": true }
+          ]
+        }
+      ]
+    }
+  }
+}
