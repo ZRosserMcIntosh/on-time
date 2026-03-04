@@ -44,17 +44,115 @@ And they realize *they didn't*.
 
 ---
 
+## Story Overview — The Time-Travel Premise
+
+### The Conceit
+
+Kimiru is not just a talking cat. He is a **time-walker** — ancient, bound by rules
+he won't fully explain, capable of transporting the siblings across centuries.
+
+The story begins in the present day. Four siblings. A backyard. A campout.
+Then Kimiru arrives, and the world opens.
+
+The siblings are pulled — not violently, not flashily — into **real historical eras**.
+Feudal Japan. The Oregon Trail. Ottoman Constantinople. The Dust Bowl.
+Ancient Mali. The Atlantic passage. Revolutionary France. And more.
+
+Each era is not a tourist destination. It is a **crucible**.
+
+The siblings don't observe history. They **live inside it**.
+They eat its food. They follow its rules. They feel its constraints.
+They meet people who will never exist again.
+And they carry what they learned back with them — as memories, as scars, as choices.
+
+### Why Time Travel?
+
+The time-travel mechanic serves four purposes:
+
+1. **History education.** The player learns real history by *being inside it* —
+   navigating a market economy, surviving scarcity, witnessing law and custom,
+   understanding how power works. Never through lectures. Through living.
+
+2. **Emotional deposits.** Each era creates unique memories that feed the
+   personalized grief engine in Chapter 29. The more eras explored deeply,
+   the more devastating the callbacks.
+
+3. **Virtue/vice shaping.** Each era presents moral tradeoffs that shape Rush's
+   character — choices that are genuinely hard because the historical context
+   makes both sides reasonable.
+
+4. **Shepherd's philosophy stress-tested.** Every era contains at least one moment
+   where "logic over love" is either validated or challenged by real historical
+   circumstances. The player accumulates evidence for or against Shepherd's worldview
+   without the game ever telling them what to think.
+
+### How Eras Are Selected
+
+Kimiru does not offer a menu. He does not explain why *this* era, *this* time.
+
+The siblings arrive and must figure out where — and *when* — they are.
+
+Eras are selected by the narrative to:
+- Mirror the current emotional state of the sibling arc
+- Provide contrast (a joyful era after a heavy one, per the Sustainability Rule)
+- Escalate the thematic stakes as Drew's death approaches
+- Give each sibling a chance to lead (Lu excels in eras requiring strategy;
+  Yen connects with people in eras requiring empathy; Drew protects in eras
+  requiring sacrifice; Rush must learn in all of them)
+
+### The History Teaching Rules (Non-Negotiable)
+
+Every era must:
+
+1. Be **historically grounded**. Real places. Real social structures. Real constraints.
+   The player should be able to look it up afterward and find it's true.
+
+2. Teach through **environment, missions, dialogue, and moral tradeoffs** —
+   never through exposition dumps. No character says "Well, as you know, in 1347..."
+
+3. Show the **human cost and daily texture** of the era. Food. Labor. Class.
+   Belief. Family. Danger. What it smelled like. What people worried about.
+
+4. Include at least one **"learned by doing" moment** — navigating a market,
+   surviving scarcity, witnessing a trial, understanding a prayer,
+   watching how power passes from hand to hand.
+
+5. **Avoid modern smugness.** The siblings do not arrive in the past and judge it
+   by 2025 standards. They struggle with it. They adapt. They learn.
+   The game is morally serious without being preachy.
+
+6. **No famous-battle tourism.** The player does not fight at Thermopylae or
+   witness the signing of the Declaration. History happens at human scale —
+   in kitchens, markets, fields, and doorways. The big events are background
+   thunder. The foreground is always a person.
+
+### The Tone of Time Travel
+
+The transitions should feel **solemn and strange**. Not whimsical.
+Not a magic school bus. Not a portal with sparkles.
+
+Kimiru speaks. The air changes. Sound drops.
+And then they're somewhere else.
+
+The disorientation is real. The children are scared.
+Drew steadies them. (Before he dies.)
+Rush must learn to steady them himself. (After.)
+
+---
+
 ## The Five Arcs (100 Chapters)
 
-| Arc | Chapters | Theme | Emotional Core | Approx. Playtime |
-|-----|----------|-------|----------------|-----------------|
-| **I — The Golden Days** | Prologue – 15 | Safety, wonder, becoming siblings, Shepherd as family | "This is what we have." | ~10 hours |
-| **II — The Cracks** | 16 – 24 | Things aren't what they seem, trust frays | "Something is wrong." | ~6 hours |
-| **III — The Fall** | 25 – 30 | Drew's death, the world breaks | "I wasn't allowed to finish loving." | ~4 hours |
-| **IV — The Dark** | 31 – 70 | Grief, fracture, near-corruption, rebuilding | "How do you go on when the light goes out?" | ~25 hours |
-| **V — The Rushlight** | 71 – 100 | Finding meaning, carrying what was lost forward | "A small light is still a light." | ~15 hours |
+| Arc | Chapters | Theme | Emotional Core | Eras | Approx. Playtime |
+|-----|----------|-------|----------------|------|-----------------|
+| **I — The Golden Days** | Prologue – 15 | Safety, wonder, becoming siblings, Shepherd as family | "This is what we have." | Wonder eras: Chang'an, Mali, Iceland | ~10 hours |
+| **II — The Cracks** | 16 – 24 | Things aren't what they seem, trust frays | "Something is wrong." | Fracture eras: Constantinople, Haiti | ~6 hours |
+| **III — The Fall** | 25 – 30 | Drew's death, the world breaks | "I wasn't allowed to finish loving." | **No era travel. Present only.** | ~4 hours |
+| **IV — The Dark** | 31 – 70 | Grief, fracture, near-corruption, rebuilding | "How do you go on when the light goes out?" | Survival eras: Black Death, Dust Bowl, Irish Famine, Underground Railroad | ~25 hours |
+| **V — The Rushlight** | 71 – 100 | Finding meaning, carrying what was lost forward | "A small light is still a light." | Legacy eras: Oregon Trail, Apollo Program | ~15 hours |
 
 **Total: ~60 hours. Minimum 24+ hours before Drew's death (Chapter 27).**
+
+**See [HISTORY_ERAS.md](HISTORY_ERAS.md) for the complete era bible — 12 candidate eras with scenes, tensions, and the repeatable chapter template.**
 
 ---
 
@@ -1270,14 +1368,72 @@ Two is a list. A list is craft, not grief.
 
 ## Kimiru's Arc
 
+### Voice and Presence
+
+Kimiru speaks with a **Japanese accent** — not comedic, not stereotyped.
+Dignified. The cadence of someone who has lived a very long time
+and chooses each word like it costs something.
+
+He carries himself like an **old samurai**: restrained, dry, precise.
+Occasionally cryptic. Never goofy. Never cute mascot energy.
+He is ancient, watchful, and oddly respectful toward the children —
+as if they are more important than they know, and he is choosing
+not to tell them why.
+
+**Kimiru's voice rules:**
+- Speaks in short sentences. Rarely more than two clauses.
+- Uses formal address when serious. Informal when testing.
+- Dry humor — never jokes, but says things that are quietly funny
+  because of their precision. "That was... not your finest moment."
+- When he warns, he is indirect. Not because he's coy — because
+  he is bound by rules he won't explain. He *cannot* say it plainly.
+  That constraint is real and painful for him.
+- When he is emotional (rare), it manifests as silence, not speech.
+  The more upset Kimiru is, the less he says.
+
+**Kimiru is NOT:**
+- ❌ A cute animal sidekick
+- ❌ Comic relief
+- ❌ An exposition machine
+- ❌ A history teacher in cat form
+- ❌ Whimsical or playful
+
+**Kimiru IS:**
+- ✅ A time-walker with ancient knowledge and hard-won restraint
+- ✅ A guide who tests character more than he explains
+- ✅ Bound by rules that prevent him from simply preventing tragedy
+- ✅ Deeply invested in the children, in a way he won't name
+- ✅ The only character who knows how the story ends — and can't change it
+
+### Kimiru's Role as Time-Walker
+
+Kimiru can transport the siblings across centuries. He does not explain the mechanism.
+He does not offer a menu. He does not say "now we go to feudal Japan."
+
+He speaks. The air changes. Sound drops. And they're somewhere else.
+
+In each era, Kimiru:
+- Gives **minimal context**. The children must figure out where and when they are.
+- Does **not** narrate history. He lets the era speak for itself.
+- **Tests** the children — places them in situations where their choices reveal character.
+- Occasionally **warns** — but indirectly. His constraints are real.
+- Sometimes **disappears** within an era. The children must navigate alone.
+- Reappears when it's time to leave — or when someone is in genuine danger.
+
+His relationship to history is personal. He has *been* to these eras before.
+He knows people who lived in them. Some of his warnings come from grief,
+not from knowledge. "I would not linger here" might mean "I lost someone here."
+
+### Phase Arc
+
 | Phase | Chapters | Behavior |
 |-------|----------|----------|
-| Observer | Prologue–15 | Watches. Cryptic. Tests. Endorses Drew once. |
-| Warning | 16–24 | Evasive. Worried. "The one who guards is not always the one who protects." |
+| Observer | Prologue–15 | Watches. Cryptic. Tests. Endorses Drew once. Begins transporting siblings to eras. |
+| Warning | 16–24 | Evasive. Worried. "The one who guards is not always the one who protects." Eras become darker. |
 | Breaking | 25–30 | Fails. Goes silent. "I do not understand this." |
-| Grief | 31–40 | Small. Quiet. Curls up. Doesn't guide. |
-| Return | 41–60 | Gentle. Less cryptic. More honest. "The bitter path is easier. It is always easier." |
-| Companion | 61–100 | No longer a guide above. A friend beside. "I could not save him. I can still walk with you." |
+| Grief | 31–40 | Small. Quiet. Curls up. Doesn't guide. Eras reflect loss — plague, famine, exile. |
+| Return | 41–60 | Gentle. Less cryptic. More honest. "The bitter path is easier. It is always easier." Eras become tests. |
+| Companion | 61–100 | No longer a guide above. A friend beside. "I could not save him. I can still walk with you." Eras become healing. |
 
 ### Kimiru's Defining Lines:
 - Prologue: "I've been waiting... for it to begin."
@@ -1388,12 +1544,14 @@ Both are legitimate. But one cuts deeper.
 
 Do not advertise this as:
 "An emotional indie about grief."
+"An educational game about history."
 
 Market it as:
-**"A story about siblings and a small light."**
+**"A story about siblings, a small light, and the places it carried them."**
 
 Let them walk in unguarded.
 The punch lands harder that way.
+The history lands deeper that way.
 
 ---
 
