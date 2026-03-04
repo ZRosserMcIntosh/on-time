@@ -1,0 +1,323 @@
+{
+  "id": "prologue",
+  "number": 0,
+  "title": "O Último Dia Bom",
+  "subtitle": "Antes de tudo mudar",
+  "firstSceneId": "backyard",
+  "scenes": {
+    "backyard": {
+      "id": "backyard",
+      "background": "art/prologue/backyard_golden_hour.png",
+      "music": "audio/music/warmth.ogg",
+      "ambience": "audio/ambience/summer_evening.ogg",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "characterPositions": {
+        "drew": "left",
+        "rush": "center",
+        "lu": "center",
+        "yen": "right"
+      },
+      "dialogue": [
+        {
+          "speaker": null,
+          "text": "O quintal cheira a grama cortada e à última hora de sol. O tipo de entardecer que não sabe que está acabando.",
+          "emotion": "neutral"
+        },
+        {
+          "speaker": "drew",
+          "text": "Beleza, presta atenção. Eu tenho um plano pra hoje à noite e envolve vocês todos, então ninguém foge.",
+          "emotion": "happy"
+        },
+        {
+          "speaker": "yen",
+          "text": "Que tipo de plano?",
+          "emotion": "curious"
+        },
+        {
+          "speaker": "drew",
+          "text": "A gente vai dormir aqui fora. Nós quatro. Debaixo das estrelas. Como a gente fazia antes.",
+          "emotion": "gentle"
+        },
+        {
+          "speaker": "rush",
+          "text": "A gente não faz isso desde—",
+          "emotion": "thoughtful"
+        },
+        {
+          "speaker": "drew",
+          "text": "Desde que a gente era pequeno. É. Essa é a ideia.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": null,
+          "text": "Drew olha pra cada um de vocês. Tem algo nos olhos dele que você não consegue nomear. Não é tristeza. Algo mais pesado. Algo que sabe.",
+          "emotion": "neutral"
+        },
+        {
+          "speaker": "lu",
+          "text": "Eu topo. Mas só se a gente construir um forte de verdade dessa vez. Nada daquela pilha triste de cobertores do ano passado.",
+          "emotion": "playful"
+        },
+        {
+          "speaker": "drew",
+          "text": "Fechado. Rush — você cuida dos materiais. Lu — arquitetura. Yen...",
+          "emotion": "warm"
+        },
+        {
+          "speaker": "yen",
+          "text": "Lanchinhos?",
+          "emotion": "hopeful"
+        },
+        {
+          "speaker": "drew",
+          "text": "Lanchinhos.",
+          "emotion": "happy"
+        },
+        {
+          "speaker": null,
+          "text": "Todo mundo ri. É fácil. É natural. Você vai se lembrar desse som pelo resto da vida.",
+          "emotion": "neutral",
+          "effects": [
+            { "type": "ADD_MEMORY", "target": "the_last_good_laugh", "value": "true" },
+            { "type": "ADJUST_GRIEF", "target": "", "value": "-5" }
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Vocês se espalham pra juntar as coisas. O sol desce mais. As sombras ficam mais longas.",
+          "emotion": "neutral",
+          "nextScene": "the_fort"
+        }
+      ]
+    },
+    "the_fort": {
+      "id": "the_fort",
+      "background": "art/prologue/blanket_fort_dusk.png",
+      "music": "audio/music/warmth.ogg",
+      "ambience": "audio/ambience/crickets.ogg",
+      "mood": "warm",
+      "characters": ["drew", "rush", "lu", "yen"],
+      "characterPositions": {
+        "drew": "left",
+        "rush": "center",
+        "lu": "center",
+        "yen": "right"
+      },
+      "dialogue": [
+        {
+          "speaker": null,
+          "text": "O forte é uma obra-prima ridícula. Cobertores estendidos sobre cadeiras de jardim, sustentados por cabos de vassoura e otimismo. Projeto da Lu. Não deveria funcionar, mas funciona."
+        },
+        {
+          "speaker": "drew",
+          "text": "Tá. Antes da luz acabar... eu quero dizer uma coisa.",
+          "emotion": "serious"
+        },
+        {
+          "speaker": null,
+          "text": "Ele não olha pra ninguém. Olha pra cima."
+        },
+        {
+          "speaker": "drew",
+          "text": "Aconteça o que acontecer... o que quer que dê errado... vocês três ficam juntos. Tá me ouvindo?",
+          "emotion": "intense"
+        },
+        {
+          "speaker": "rush",
+          "text": "Do que você tá falando?",
+          "emotion": "confused"
+        },
+        {
+          "speaker": "drew",
+          "text": "Só... me promete.",
+          "emotion": "gentle"
+        },
+        {
+          "speaker": null,
+          "text": "O ar muda. Os grilos parecem mais altos. Algo no jeito que ele diz faz a noite inteira ficar parada.",
+          "emotion": "neutral",
+          "choices": [
+            {
+              "text": "Eu prometo.",
+              "nextNode": null,
+              "effects": [
+                { "type": "SET_FLAG", "target": "promised_drew", "value": "true" },
+                { "type": "ADD_VIRTUE", "target": "honesty", "value": "1" },
+                { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": "5" },
+                { "type": "ADD_MEMORY", "target": "the_promise", "value": "true" }
+              ],
+              "notification": "Você fez uma promessa."
+            },
+            {
+              "text": "Tá sendo estranho, Drew.",
+              "nextNode": null,
+              "effects": [
+                { "type": "SET_FLAG", "target": "deflected_drew", "value": "true" },
+                { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": "-2" }
+              ],
+              "notification": "Drew sorri. Mas os olhos dele não."
+            },
+            {
+              "text": "[Ficar em silêncio]",
+              "nextNode": null,
+              "silent": true,
+              "effects": [
+                { "type": "SET_FLAG", "target": "silent_at_promise", "value": "true" },
+                { "type": "ADD_MEMORY", "target": "the_silence", "value": "true" }
+              ],
+              "notification": "Alguns silêncios se tornam permanentes."
+            }
+          ],
+          "timer": 10.0,
+          "timeoutDefault": 2
+        },
+        {
+          "speaker": "drew",
+          "text": "Bom.",
+          "emotion": "sad"
+        },
+        {
+          "speaker": null,
+          "text": "Ele deita. Mãos atrás da cabeça. Olha as estrelas como se estivesse memorizando."
+        },
+        {
+          "speaker": "yen",
+          "text": "Drew? O que é aquilo?",
+          "emotion": "scared"
+        },
+        {
+          "speaker": null,
+          "text": "Na beira do quintal, bem depois de onde a luz alcança, algo se move. Dois olhos. Verde-amarelados. Observando."
+        },
+        {
+          "speaker": null,
+          "text": "Um gato preto entra na luz da lanterna. Ele é pequeno. Impossivelmente parado. Olha direto pro Drew. Depois pra você.",
+          "nextScene": "kimiru_appears"
+        }
+      ]
+    },
+    "kimiru_appears": {
+      "id": "kimiru_appears",
+      "background": "art/prologue/blanket_fort_night.png",
+      "music": "audio/music/mystery.ogg",
+      "ambience": "audio/ambience/crickets_low.ogg",
+      "mood": "tense",
+      "characters": ["drew", "rush", "lu", "yen", "kimiru"],
+      "characterPositions": {
+        "drew": "far_left",
+        "rush": "left",
+        "lu": "center",
+        "yen": "right",
+        "kimiru": "far_right"
+      },
+      "dialogue": [
+        {
+          "speaker": null,
+          "text": "O gato não se move como gatos se movem. É deliberado demais. Paciente demais. Como se tivesse escolhido este exato momento pra chegar."
+        },
+        {
+          "speaker": "lu",
+          "text": "É só um gato de rua. Xô.",
+          "emotion": "dismissive"
+        },
+        {
+          "speaker": "kimiru",
+          "text": "Eu não sou de rua. E eu não saio com xô.",
+          "emotion": "measured"
+        },
+        {
+          "speaker": null,
+          "text": "Ninguém respira."
+        },
+        {
+          "speaker": "yen",
+          "text": "O... o gato acabou de...",
+          "emotion": "shocked"
+        },
+        {
+          "speaker": "kimiru",
+          "text": "Falar. Sim. Vocês vão se acostumar.",
+          "emotion": "patient"
+        },
+        {
+          "speaker": "drew",
+          "text": "Tá. Ou eu tô ficando louco, ou—",
+          "emotion": "stunned"
+        },
+        {
+          "speaker": "kimiru",
+          "text": "Você não está perdendo nada. Ainda não.",
+          "emotion": "neutral"
+        },
+        {
+          "speaker": null,
+          "text": "O gato — Kimiru, embora vocês ainda não saibam o nome dele — senta. Enrola a cauda nas patas. Preciso. Como se tudo nele fosse calculado.",
+          "effects": [
+            { "type": "SET_FLAG", "target": "kimiru_appeared", "value": "true" },
+            { "type": "ADD_MEMORY", "target": "first_meeting_kimiru", "value": "true" }
+          ]
+        },
+        {
+          "speaker": null,
+          "text": "Ele olha pro Drew por muito tempo. Mais do que é confortável. Depois desvia o olhar.",
+          "choices": [
+            {
+              "text": "O que você é?",
+              "effects": [
+                { "type": "ADD_VIRTUE", "target": "courage", "value": "1" },
+                { "type": "ADJUST_RELATIONSHIP", "target": "kimiru", "value": "3" }
+              ],
+              "notification": "Kimiru inclina a cabeça. Quase aprovando."
+            },
+            {
+              "text": "Sai de perto da gente.",
+              "effects": [
+                { "type": "ADD_VICE", "target": "cowardice", "value": "1" },
+                { "type": "ADJUST_RELATIONSHIP", "target": "kimiru", "value": "-2" }
+              ],
+              "notification": "Kimiru não se move."
+            },
+            {
+              "text": "Drew... você tá vendo isso também?",
+              "effects": [
+                { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": "3" },
+                { "type": "ADD_MEMORY", "target": "looked_to_drew", "value": "true" }
+              ],
+              "notification": "Drew assente. Ele vê."
+            }
+          ],
+          "timer": 8.0,
+          "timeoutDefault": 2
+        },
+        {
+          "speaker": "kimiru",
+          "text": "Meu nome é Kimiru. Eu estava esperando.",
+          "emotion": "measured"
+        },
+        {
+          "speaker": "rush",
+          "text": "Esperando pelo quê?",
+          "emotion": "suspicious"
+        },
+        {
+          "speaker": "kimiru",
+          "text": "Pra que começasse.",
+          "emotion": "neutral"
+        },
+        {
+          "speaker": null,
+          "text": "Ele não diz mais nada. A lanterna tremula. Drew puxa Yen mais perto. Lu cruza os braços. Rush não desvia o olhar do gato."
+        },
+        {
+          "speaker": null,
+          "text": "Em algum lugar, algo muda. O dia bom acaba. Não com um estrondo. Com um sussurro.",
+          "effects": [
+            { "type": "SET_FLAG", "target": "prologue_complete", "value": "true" }
+          ],
+          "nextScene": "chapter:chapter_1"
+        }
+      ]
+    }
+  }
+}

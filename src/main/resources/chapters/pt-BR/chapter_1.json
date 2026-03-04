@@ -1,8 +1,8 @@
 {
   "id": "chapter_1",
   "number": 1,
-  "title": "First Day",
-  "subtitle": "You don't choose your family. Sometimes they choose you.",
+  "title": "Primeiro Dia",
+  "subtitle": "Você não escolhe sua família. Às vezes ela escolhe você.",
   "firstSceneId": "schoolyard",
   "eraId": "modern",
   "scenes": {
@@ -19,62 +19,62 @@
       "dialogue": [
         {
           "speaker": null,
-          "text": "The school is bigger than Rush expected. Three buildings. A field that goes on forever. Kids everywhere, moving in groups he doesn't belong to yet.",
+          "text": "A escola é maior do que Rush esperava. Três prédios. Um campo que parece não ter fim. Crianças por toda parte, andando em grupos aos quais ele ainda não pertence.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "Rush stands at the edge of the courtyard, backpack straps pulled tight, watching everyone else know exactly where to go.",
+          "text": "Rush fica parado na borda do pátio, as alças da mochila bem apertadas, vendo todo mundo saber exatamente para onde ir.",
           "emotion": "neutral"
         },
         {
           "speaker": "rush",
-          "text": "(Don't look lost. Whatever you do, don't look lost.)",
+          "text": "(Não pareça perdido. Faça o que fizer, não pareça perdido.)",
           "emotion": "nervous"
         },
         {
           "speaker": null,
-          "text": "A girl with dark curly hair and a notebook already open walks straight past him, then stops. Backs up. Looks at him like he's a math problem.",
+          "text": "Uma garota de cabelos escuros e cacheados, com um caderno já aberto, passa direto por ele, para, volta. Olha para ele como se fosse um problema de matemática.",
           "emotion": "neutral"
         },
         {
           "speaker": "lu",
-          "text": "You're new.",
+          "text": "Você é novo.",
           "emotion": "direct"
         },
         {
           "speaker": "rush",
-          "text": "Is it that obvious?",
+          "text": "É tão óbvio assim?",
           "emotion": "sheepish"
         },
         {
           "speaker": "lu",
-          "text": "You're holding your schedule upside down.",
+          "text": "Você tá segurando o horário de cabeça pra baixo.",
           "emotion": "amused"
         },
         {
           "speaker": null,
-          "text": "Rush looks down. She's right.",
+          "text": "Rush olha pra baixo. Ela tem razão.",
           "emotion": "neutral"
         },
         {
           "speaker": "lu",
-          "text": "I'm Luísa. Lu, if you want. What's your first class?",
+          "text": "Eu sou a Luísa. Lu, se quiser. Qual é sua primeira aula?",
           "emotion": "friendly"
         },
         {
           "speaker": "rush",
-          "text": "Uh... History? Room 204?",
+          "text": "Hm... História? Sala 204?",
           "emotion": "uncertain"
         },
         {
           "speaker": "lu",
-          "text": "That's mine too. Come on. I'll show you where it is before the bell.",
+          "text": "É a minha também. Vem. Eu te mostro onde é antes do sinal.",
           "emotion": "helpful"
         },
         {
           "speaker": null,
-          "text": "She doesn't wait for him to agree. She just walks. Rush follows. It's easier than deciding.",
+          "text": "Ela não espera ele concordar. Simplesmente anda. Rush segue. É mais fácil do que decidir.",
           "emotion": "neutral",
           "effects": [
             { "type": "ADJUST_RELATIONSHIP", "target": "lu", "value": "3" },
@@ -99,77 +99,77 @@
       "dialogue": [
         {
           "speaker": null,
-          "text": "The hallway is chaos. Lockers slamming. Someone drops a trumpet case. A teacher yells about running.",
+          "text": "O corredor é um caos. Armários batendo. Alguém derruba um estojo de trompete. Uma professora grita pra pararem de correr.",
           "emotion": "neutral"
         },
         {
           "speaker": "lu",
-          "text": "204 is upstairs, second left. The teacher is Senhor— I mean, Mr. Almeida. He's okay. Talks too much about Rome.",
+          "text": "A 204 é lá em cima, segunda à esquerda. O professor é o Senhor Almeida. Ele é legal. Fala demais sobre Roma.",
           "emotion": "matter_of_fact"
         },
         {
           "speaker": null,
-          "text": "A boy rounds the corner — tall for his age, calm the way old trees are calm. He's carrying two backpacks.",
+          "text": "Um garoto vira a esquina — alto pra idade dele, calmo do jeito que árvores velhas são calmas. Ele carrega duas mochilas.",
           "emotion": "neutral"
         },
         {
           "speaker": "drew",
-          "text": "Lu! Did you forget this again?",
+          "text": "Lu! Esqueceu isso de novo?",
           "emotion": "exasperated"
         },
         {
           "speaker": "lu",
-          "text": "I didn't forget it. I left it. There's a difference.",
+          "text": "Eu não esqueci. Eu deixei. Tem uma diferença.",
           "emotion": "defiant"
         },
         {
           "speaker": "drew",
-          "text": "The difference is I carried it up two flights of stairs.",
+          "text": "A diferença é que eu carreguei dois lances de escada.",
           "emotion": "dry"
         },
         {
           "speaker": null,
-          "text": "He hands Lu her backpack. She takes it without thanking him. He doesn't seem to expect her to.",
+          "text": "Ele entrega a mochila da Lu. Ela pega sem agradecer. Ele não parece esperar que ela agradeça.",
           "emotion": "neutral"
         },
         {
           "speaker": "drew",
-          "text": "Who's this?",
+          "text": "Quem é esse?",
           "emotion": "curious"
         },
         {
           "speaker": "lu",
-          "text": "New kid. He was holding his schedule upside down.",
+          "text": "Garoto novo. Tava segurando o horário de cabeça pra baixo.",
           "emotion": "teasing"
         },
         {
           "speaker": "rush",
-          "text": "I'm Rush.",
+          "text": "Eu sou o Rush.",
           "emotion": "embarrassed"
         },
         {
           "speaker": "drew",
-          "text": "Rush. That's a real name?",
+          "text": "Rush. Esse é um nome de verdade?",
           "emotion": "genuine_curiosity"
         },
         {
           "speaker": "rush",
-          "text": "Short for something longer that nobody uses.",
+          "text": "É apelido de algo mais longo que ninguém usa.",
           "emotion": "defensive"
         },
         {
           "speaker": "drew",
-          "text": "Rush is better. I'm Drew.",
+          "text": "Rush é melhor. Eu sou o Drew.",
           "emotion": "warm"
         },
         {
           "speaker": null,
-          "text": "He offers his hand. Not like a kid. Like someone who's been watching adults longer than he should have needed to.",
+          "text": "Ele estende a mão. Não como criança. Como alguém que observou adultos por mais tempo do que deveria ter precisado.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "Rush shakes it. Drew's grip is firm but not competitive. Like he's saying: I see you. You're real.",
+          "text": "Rush aperta. O aperto de Drew é firme mas não competitivo. Como se dissesse: eu te vejo. Você é real.",
           "emotion": "neutral",
           "effects": [
             { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": "5" },
@@ -178,27 +178,27 @@
         },
         {
           "speaker": "drew",
-          "text": "You in 204 too?",
+          "text": "Você é da 204 também?",
           "emotion": "friendly"
         },
         {
           "speaker": "rush",
-          "text": "Yeah. History.",
+          "text": "Sim. História.",
           "emotion": "warming_up"
         },
         {
           "speaker": "drew",
-          "text": "Good. Sit with us. Lu talks enough for three people, so you don't have to say much.",
+          "text": "Ótimo. Senta com a gente. A Lu fala por três pessoas, então você não precisa falar muito.",
           "emotion": "teasing"
         },
         {
           "speaker": "lu",
-          "text": "I talk the right amount. Everyone else talks too little.",
+          "text": "Eu falo a quantidade certa. Todo mundo é que fala de menos.",
           "emotion": "indignant"
         },
         {
           "speaker": null,
-          "text": "Drew grins. It's the kind of grin that makes you feel like you've been invited into something that matters.",
+          "text": "Drew sorri. É o tipo de sorriso que faz você sentir que foi convidado pra algo que importa.",
           "emotion": "neutral",
           "nextScene": "classroom"
         }
@@ -220,60 +220,60 @@
       "dialogue": [
         {
           "speaker": null,
-          "text": "Room 204 smells like dry-erase markers and someone's forgotten lunch. Maps cover every wall. A timeline stretches across the ceiling like a clothesline of centuries.",
+          "text": "A sala 204 cheira a canetão e ao almoço esquecido de alguém. Mapas cobrem cada parede. Uma linha do tempo se estende pelo teto como um varal de séculos.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "Drew and Lu take desks near the back. Rush follows. At the desk beside them, a small girl is already sitting perfectly still, hands folded, eyes forward. Like she's been waiting since dawn.",
+          "text": "Drew e Lu sentam perto do fundo. Rush segue. Na carteira ao lado, uma menina pequena já está sentada perfeitamente imóvel, mãos dobradas, olhos pra frente. Como se estivesse esperando desde o amanhecer.",
           "emotion": "neutral"
         },
         {
           "speaker": "lu",
-          "text": "That's Yenevieve. She doesn't talk much. But when she does, pay attention.",
+          "text": "Essa é a Yenevieve. Ela não fala muito. Mas quando fala, presta atenção.",
           "emotion": "respectful"
         },
         {
           "speaker": null,
-          "text": "Yenevieve — Yen — turns her head just slightly. She looks at Rush the way a bird looks at something it hasn't decided about yet.",
+          "text": "Yenevieve — Yen — vira a cabeça só um pouquinho. Ela olha pro Rush do jeito que um pássaro olha pra algo sobre o qual ainda não se decidiu.",
           "emotion": "neutral"
         },
         {
           "speaker": "yen",
-          "text": "You have kind eyes.",
+          "text": "Você tem olhos gentis.",
           "emotion": "sincere"
         },
         {
           "speaker": null,
-          "text": "Nobody has ever said that to Rush before. He doesn't know what to do with it.",
+          "text": "Ninguém nunca disse isso pro Rush antes. Ele não sabe o que fazer com isso.",
           "emotion": "neutral",
           "choices": [
             {
-              "text": "\"Thanks. That's... the nicest thing anyone's said to me today.\"",
+              "text": "\"Obrigado. Essa é... a coisa mais legal que me disseram hoje.\"",
               "nextNode": null,
               "effects": [
                 { "type": "ADJUST_RELATIONSHIP", "target": "yen", "value": "5" },
                 { "type": "ADD_VIRTUE", "target": "honesty", "value": "1" }
               ],
-              "notification": "Yen smiles. Tiny. Like a secret."
+              "notification": "Yen sorri. Pequenino. Como um segredo."
             },
             {
-              "text": "\"Uh... thanks?\"",
+              "text": "\"Ah... valeu?\"",
               "nextNode": null,
               "effects": [
                 { "type": "ADJUST_RELATIONSHIP", "target": "yen", "value": "2" }
               ],
-              "notification": "Yen nods. She expected that."
+              "notification": "Yen assente. Ela esperava isso."
             },
             {
-              "text": "[Look away, embarrassed]",
+              "text": "[Desviar o olhar, com vergonha]",
               "nextNode": null,
               "silent": true,
               "effects": [
                 { "type": "ADJUST_RELATIONSHIP", "target": "yen", "value": "1" },
                 { "type": "ADD_MEMORY", "target": "shy_with_yen", "value": "true" }
               ],
-              "notification": "Yen goes back to facing forward. But she scoots her desk a little closer."
+              "notification": "Yen volta a olhar pra frente. Mas puxa a carteira um pouquinho mais perto."
             }
           ],
           "timer": 8.0,
@@ -281,17 +281,17 @@
         },
         {
           "speaker": "drew",
-          "text": "Yen's in our group for the year. Mr. Almeida assigns table groups. You're stuck with us now.",
+          "text": "A Yen é do nosso grupo pro ano inteiro. O Sr. Almeida divide em grupos de mesa. Agora você tá preso com a gente.",
           "emotion": "matter_of_fact"
         },
         {
           "speaker": "rush",
-          "text": "Stuck with you sounds okay.",
+          "text": "Preso com vocês parece bom.",
           "emotion": "genuine"
         },
         {
           "speaker": null,
-          "text": "Drew looks at him for a beat. Then nods, slow. Like something just got confirmed.",
+          "text": "Drew olha pra ele por um momento. Depois assente, devagar. Como se algo tivesse acabado de ser confirmado.",
           "emotion": "neutral",
           "effects": [
             { "type": "ADJUST_RELATIONSHIP", "target": "yen", "value": "3" },
@@ -301,23 +301,23 @@
         },
         {
           "speaker": null,
-          "text": "Mr. Almeida clears his throat. The class goes quiet. He points at the timeline on the ceiling.",
+          "text": "O Sr. Almeida limpa a garganta. A turma fica em silêncio. Ele aponta pra linha do tempo no teto.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "\"History isn't about memorizing dates. It's about understanding why people made the choices they made — and what happened because of those choices.\"",
+          "text": "\"História não é sobre decorar datas. É sobre entender por que as pessoas fizeram as escolhas que fizeram — e o que aconteceu por causa dessas escolhas.\"",
           "emotion": "neutral",
           "cognitivePrinciple": "first_principles"
         },
         {
           "speaker": null,
-          "text": "Rush doesn't know it yet, but that sentence is going to haunt him for the rest of his life.",
+          "text": "Rush ainda não sabe, mas essa frase vai assombrá-lo pelo resto da vida.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "The bell rings. The first day has begun. Rush has a seat, a table group, and three people who seem to have decided — without asking — that he's one of them.",
+          "text": "O sinal toca. O primeiro dia começou. Rush tem um lugar, um grupo de mesa e três pessoas que decidiram — sem perguntar — que ele é um deles.",
           "emotion": "neutral",
           "nextScene": "after_school"
         }
@@ -339,92 +339,92 @@
       "dialogue": [
         {
           "speaker": null,
-          "text": "The final bell cuts through the afternoon. Kids pour out of every door. Rush finds himself walking with Drew, Lu, and Yen like it's been that way for years.",
+          "text": "O último sinal corta a tarde. Crianças saem por todas as portas. Rush se vê andando com Drew, Lu e Yen como se fosse assim há anos.",
           "emotion": "neutral"
         },
         {
           "speaker": "drew",
-          "text": "So. Verdict on day one?",
+          "text": "E aí. Veredito do primeiro dia?",
           "emotion": "casual"
         },
         {
           "speaker": "lu",
-          "text": "Mr. Almeida is going to be my favorite teacher. He has three maps of Mesopotamia. Three. Different ones.",
+          "text": "O Sr. Almeida vai ser meu professor favorito. Ele tem três mapas da Mesopotâmia. Três. Diferentes.",
           "emotion": "excited"
         },
         {
           "speaker": "drew",
-          "text": "That tracks.",
+          "text": "Faz sentido.",
           "emotion": "amused"
         },
         {
           "speaker": "yen",
-          "text": "The cafeteria is too loud.",
+          "text": "O refeitório é barulhento demais.",
           "emotion": "quiet"
         },
         {
           "speaker": "drew",
-          "text": "We'll eat outside tomorrow. Under the big tree. It's quieter there.",
+          "text": "Amanhã a gente come lá fora. Debaixo da árvore grande. É mais quieto lá.",
           "emotion": "protective"
         },
         {
           "speaker": null,
-          "text": "He says it like it's already decided. Like Yen's comfort is something he rearranges the world for.",
+          "text": "Ele fala como se já estivesse decidido. Como se o conforto da Yen fosse algo pelo qual ele reorganiza o mundo.",
           "emotion": "neutral"
         },
         {
           "speaker": "lu",
-          "text": "Rush, which way do you go home?",
+          "text": "Rush, pra que lado você vai pra casa?",
           "emotion": "curious"
         },
         {
           "speaker": "rush",
-          "text": "Down Elm, then left on Maple. The white house with the broken mailbox.",
+          "text": "Pela Elm, depois vira na Maple. A casa branca com a caixa de correio quebrada.",
           "emotion": "casual"
         },
         {
           "speaker": "drew",
-          "text": "That's on our way. We'll walk together.",
+          "text": "É no nosso caminho. A gente vai junto.",
           "emotion": "decided"
         },
         {
           "speaker": null,
-          "text": "Again — not a question. Drew doesn't ask if Rush wants to be included. He just includes him. As if it would be strange not to.",
+          "text": "De novo — não é uma pergunta. Drew não pergunta se Rush quer ser incluído. Ele simplesmente inclui. Como se fosse estranho não fazer isso.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "They cut through the back lot behind the school. It's mostly empty — a stretch of cracked asphalt that gives way to a thin strip of trees and an old wooden fence.",
+          "text": "Eles cortam caminho pelo fundo da escola. Está quase vazio — um trecho de asfalto rachado que dá numa faixa fina de árvores e uma cerca de madeira velha.",
           "emotion": "neutral"
         },
         {
           "speaker": "lu",
-          "text": "This is the shortcut. Nobody uses it because of the fence, but there's a gap on the left.",
+          "text": "Esse é o atalho. Ninguém usa por causa da cerca, mas tem um buraco na esquerda.",
           "emotion": "conspiratorial"
         },
         {
           "speaker": null,
-          "text": "They squeeze through, one by one. Drew goes last, holding the fence for Yen.",
+          "text": "Passam pela cerca, um por um. Drew vai por último, segurando a cerca pra Yen.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "On the other side: a small clearing. Overgrown grass. A rusted bike frame. A tree stump wide enough to sit on. It feels hidden from the rest of the world.",
+          "text": "Do outro lado: uma pequena clareira. Mato alto. Uma bicicleta enferrujada. Um toco de árvore largo o suficiente pra sentar. Parece escondido do resto do mundo.",
           "emotion": "neutral"
         },
         {
           "speaker": "yen",
-          "text": "I like it here.",
+          "text": "Eu gosto daqui.",
           "emotion": "soft"
         },
         {
           "speaker": "drew",
-          "text": "Yeah. This is a good spot.",
+          "text": "É. É um bom lugar.",
           "emotion": "content"
         },
         {
           "speaker": null,
-          "text": "They stand there for a moment. Four kids who met eight hours ago, standing in a clearing that feels like it was waiting for them.",
+          "text": "Eles ficam ali por um momento. Quatro crianças que se conheceram oito horas atrás, paradas numa clareira que parecia estar esperando por eles.",
           "emotion": "neutral",
           "nextScene": "kimiru_encounter"
         }
@@ -447,117 +447,117 @@
       "dialogue": [
         {
           "speaker": "yen",
-          "text": "Look.",
+          "text": "Olha.",
           "emotion": "quiet"
         },
         {
           "speaker": null,
-          "text": "She points. On the tree stump, sitting with its tail curled around its paws, is a black cat. Not a stray's posture — too composed, too still. Like it chose to be here at exactly this moment.",
+          "text": "Ela aponta. No toco da árvore, sentado com a cauda enrolada nas patas, está um gato preto. Não tem postura de gato de rua — composto demais, imóvel demais. Como se tivesse escolhido estar ali neste exato momento.",
           "emotion": "neutral"
         },
         {
           "speaker": "lu",
-          "text": "Aw. Hello, little guy.",
+          "text": "Que fofo. Oi, gatinho.",
           "emotion": "delighted"
         },
         {
           "speaker": null,
-          "text": "The cat doesn't flinch. Its eyes are green — vivid green, like something lit from behind. It looks at each of them in turn. Drew first. Then Rush. Then Lu. Then Yen. Then back to Drew.",
+          "text": "O gato não se mexe. Seus olhos são verdes — verde vivo, como algo aceso por dentro. Ele olha para cada um deles. Drew primeiro. Depois Rush. Depois Lu. Depois Yen. Depois de volta pro Drew.",
           "emotion": "neutral"
         },
         {
           "speaker": "drew",
-          "text": "That cat is staring at us.",
+          "text": "Esse gato tá encarando a gente.",
           "emotion": "wary"
         },
         {
           "speaker": "rush",
-          "text": "Cats stare. That's what they do.",
+          "text": "Gatos encaram. É o que eles fazem.",
           "emotion": "dismissive"
         },
         {
           "speaker": "kimiru",
-          "text": "I do considerably more than stare.",
+          "text": "Eu faço consideravelmente mais do que encarar.",
           "emotion": "measured"
         },
         {
           "speaker": null,
-          "text": "Silence. Total, ringing silence. The kind where you can hear your own blood.",
+          "text": "Silêncio. Silêncio total, que zumbe. Do tipo em que você escuta seu próprio sangue.",
           "emotion": "neutral"
         },
         {
           "speaker": "lu",
-          "text": "Did the—",
+          "text": "O gato—",
           "emotion": "stunned"
         },
         {
           "speaker": "yen",
-          "text": "The cat talked.",
+          "text": "O gato falou.",
           "emotion": "matter_of_fact"
         },
         {
           "speaker": "drew",
-          "text": "Okay. Okay. Nobody panic.",
+          "text": "Tá bom. Tá bom. Ninguém entra em pânico.",
           "emotion": "controlled"
         },
         {
           "speaker": "kimiru",
-          "text": "Panicking would be pointless. I agree.",
+          "text": "Entrar em pânico seria inútil. Concordo.",
           "emotion": "dry"
         },
         {
           "speaker": null,
-          "text": "Drew steps in front of the others. Instinct. Protect first, understand later.",
+          "text": "Drew se coloca na frente dos outros. Instinto. Proteger primeiro, entender depois.",
           "emotion": "neutral"
         },
         {
           "speaker": "drew",
-          "text": "What are you?",
+          "text": "O que você é?",
           "emotion": "steady"
         },
         {
           "speaker": "kimiru",
-          "text": "A cat. Obviously. But also something else. Something you don't have a word for yet.",
+          "text": "Um gato. Obviamente. Mas também outra coisa. Algo para o qual vocês ainda não têm palavra.",
           "emotion": "patient"
         },
         {
           "speaker": "lu",
-          "text": "Cats don't talk. This is — we need to go. Drew, we need to go.",
+          "text": "Gatos não falam. Isso é — a gente precisa ir. Drew, a gente precisa ir.",
           "emotion": "frightened"
         },
         {
           "speaker": "kimiru",
-          "text": "You're free to leave. You always will be. But you should know — I've been waiting a very long time for the four of you to be in the same place.",
+          "text": "Vocês são livres pra ir. Sempre serão. Mas devem saber — eu esperei muito tempo pelos quatro estarem no mesmo lugar.",
           "emotion": "measured"
         },
         {
           "speaker": null,
-          "text": "That lands differently. Not a threat. Something heavier. Like a lock clicking open.",
+          "text": "Isso bate diferente. Não é uma ameaça. Algo mais pesado. Como uma fechadura se abrindo.",
           "emotion": "neutral"
         },
         {
           "speaker": "rush",
-          "text": "Waiting for us? We just met each other today.",
+          "text": "Esperando por nós? A gente se conheceu hoje.",
           "emotion": "confused"
         },
         {
           "speaker": "kimiru",
-          "text": "I know. I was there.",
+          "text": "Eu sei. Eu estava lá.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "Rush remembers the schoolyard that morning. The shadow that moved behind the bike rack. The flicker of green at the edge of the field during lunch.",
+          "text": "Rush se lembra do pátio naquela manhã. A sombra que se moveu atrás do bicicletário. O lampejo verde na beira do campo durante o almoço.",
           "emotion": "neutral"
         },
         {
           "speaker": "yen",
-          "text": "What's your name?",
+          "text": "Qual é o seu nome?",
           "emotion": "curious"
         },
         {
           "speaker": null,
-          "text": "Everyone looks at Yen. She's the only one who doesn't seem scared. She seems... interested.",
+          "text": "Todo mundo olha pra Yen. Ela é a única que não parece assustada. Parece... interessada.",
           "emotion": "neutral"
         },
         {
@@ -567,40 +567,40 @@
         },
         {
           "speaker": "yen",
-          "text": "That's a good name.",
+          "text": "É um nome bonito.",
           "emotion": "sincere"
         },
         {
           "speaker": "kimiru",
-          "text": "Thank you. I chose it myself. Most names are chosen for you. I find that unreasonable.",
+          "text": "Obrigado. Eu mesmo escolhi. A maioria dos nomes é escolhida pra você. Acho isso injusto.",
           "emotion": "pleased"
         },
         {
           "speaker": null,
-          "text": "Something about the way he says it — the formality, the precision — makes it impossible to believe this is a trick. This cat is real. This is happening.",
+          "text": "Algo no jeito que ele fala — a formalidade, a precisão — torna impossível acreditar que é uma pegadinha. Esse gato é real. Isso está acontecendo.",
           "emotion": "neutral",
           "choices": [
             {
-              "text": "\"What do you mean you've been waiting for us?\"",
+              "text": "\"O que você quer dizer com 'esperando por nós'?\"",
               "nextNode": null,
               "effects": [
                 { "type": "ADJUST_RELATIONSHIP", "target": "kimiru", "value": "5" },
                 { "type": "ADD_VIRTUE", "target": "courage", "value": "1" },
                 { "type": "ADD_MEMORY", "target": "asked_kimiru_why", "value": "true" }
               ],
-              "notification": "Kimiru's ears tilt forward. You have his attention."
+              "notification": "As orelhas de Kimiru se inclinam pra frente. Você tem a atenção dele."
             },
             {
-              "text": "\"This is insane. I'm going home.\"",
+              "text": "\"Isso é loucura. Eu vou pra casa.\"",
               "nextNode": null,
               "effects": [
                 { "type": "ADJUST_RELATIONSHIP", "target": "kimiru", "value": "-1" },
                 { "type": "ADD_MEMORY", "target": "rejected_kimiru_first", "value": "true" }
               ],
-              "notification": "Kimiru blinks. Slowly. Like he expected this."
+              "notification": "Kimiru pisca. Devagar. Como se esperasse isso."
             },
             {
-              "text": "[Stay quiet. Let Drew handle it.]",
+              "text": "[Ficar quieto. Deixar o Drew resolver.]",
               "nextNode": null,
               "silent": true,
               "effects": [
@@ -608,7 +608,7 @@
                 { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": "2" },
                 { "type": "ADD_MEMORY", "target": "let_drew_lead_kimiru", "value": "true" }
               ],
-              "notification": "You watch. You listen. Sometimes that's enough."
+              "notification": "Você observa. Você escuta. Às vezes isso é suficiente."
             }
           ],
           "timer": 12.0,
@@ -616,127 +616,127 @@
         },
         {
           "speaker": "kimiru",
-          "text": "Time is not what you think it is. It's not a line. It's not a circle. It's a river — and right now, the river is troubled.",
+          "text": "O tempo não é o que vocês pensam. Não é uma linha. Não é um círculo. É um rio — e agora, o rio está doente.",
           "emotion": "serious"
         },
         {
           "speaker": "drew",
-          "text": "You're a cat talking about time being a river. You get how that sounds, right?",
+          "text": "Você é um gato falando que o tempo é um rio. Sabe como isso soa, né?",
           "emotion": "skeptical"
         },
         {
           "speaker": "kimiru",
-          "text": "I get how everything sounds. I've heard this conversation before. Different children, different clearings. But always four. And always this moment.",
+          "text": "Eu sei como tudo soa. Já ouvi essa conversa antes. Crianças diferentes, clareiras diferentes. Mas sempre quatro. E sempre este momento.",
           "emotion": "weary"
         },
         {
           "speaker": "lu",
-          "text": "Before? What do you mean, before?",
+          "text": "Antes? Como assim, antes?",
           "emotion": "alarmed"
         },
         {
           "speaker": "kimiru",
-          "text": "I mean that I have walked through more centuries than this school has stood. I mean that time — the thing you think carries you forward — is sick. And you four are... relevant to the cure.",
+          "text": "Quero dizer que já caminhei por mais séculos do que essa escola existe. Que o tempo — essa coisa que vocês acham que os leva pra frente — está doente. E vocês quatro são... relevantes pra cura.",
           "emotion": "measured"
         },
         {
           "speaker": null,
-          "text": "The wind stops. The leaves stop. Everything stops. Like the world is holding its breath to hear what comes next.",
+          "text": "O vento para. As folhas param. Tudo para. Como se o mundo estivesse prendendo a respiração pra ouvir o que vem depois.",
           "emotion": "neutral"
         },
         {
           "speaker": "yen",
-          "text": "Can we help?",
+          "text": "A gente pode ajudar?",
           "emotion": "earnest"
         },
         {
           "speaker": null,
-          "text": "Drew, Lu, and Rush all look at Yen. She's seven. She's tiny. And she just volunteered for something none of them understand.",
+          "text": "Drew, Lu e Rush todos olham pra Yen. Ela tem sete anos. É minúscula. E acabou de se voluntariar pra algo que nenhum deles entende.",
           "emotion": "neutral"
         },
         {
           "speaker": "kimiru",
-          "text": "That remains to be seen. But the fact that you asked... that's a good sign.",
+          "text": "Isso ainda está por ver. Mas o fato de você ter perguntado... é um bom sinal.",
           "emotion": "gentle"
         },
         {
           "speaker": null,
-          "text": "He uncurls his tail. Stands on the stump. Stretches the way cats do — arching, deliberate, unhurried.",
+          "text": "Ele desenrola a cauda. Fica de pé no toco. Se espreguiça do jeito que gatos fazem — arqueando, deliberado, sem pressa.",
           "emotion": "neutral"
         },
         {
           "speaker": "kimiru",
-          "text": "For now — go home. Eat dinner. Do your homework. Be children. There will be time enough for what comes next.",
+          "text": "Por agora — vão pra casa. Jantem. Façam a lição. Sejam crianças. Haverá tempo suficiente pro que vem depois.",
           "emotion": "patient"
         },
         {
           "speaker": "drew",
-          "text": "And we're just supposed to... walk away? After a cat told us time is broken?",
+          "text": "E a gente simplesmente... vai embora? Depois que um gato disse que o tempo tá quebrado?",
           "emotion": "frustrated"
         },
         {
           "speaker": "kimiru",
-          "text": "Yes. Because tomorrow you'll come back. And the day after that. That's what humans do with things they don't understand — they return to them.",
+          "text": "Sim. Porque amanhã vocês vão voltar. E depois de amanhã. É o que humanos fazem com coisas que não entendem — voltam pra elas.",
           "emotion": "knowing"
         },
         {
           "speaker": null,
-          "text": "He's right. Rush knows he's right. He'll come back to this clearing tomorrow. He'll tell himself it's to check if the cat is still there. But really it's because something in his chest just cracked open — a door he didn't know he had.",
+          "text": "Ele tem razão. Rush sabe que ele tem razão. Vai voltar pra essa clareira amanhã. Vai dizer pra si mesmo que é pra ver se o gato ainda está lá. Mas na verdade é porque algo no peito dele acabou de se abrir — uma porta que ele não sabia que tinha.",
           "emotion": "neutral"
         },
         {
           "speaker": "kimiru",
-          "text": "One more thing.",
+          "text": "Mais uma coisa.",
           "emotion": "measured"
         },
         {
           "speaker": null,
-          "text": "He looks at Drew. That same long look from before. The kind that holds too much.",
+          "text": "Ele olha pro Drew. Aquele mesmo olhar longo de antes. Do tipo que carrega coisas demais.",
           "emotion": "neutral"
         },
         {
           "speaker": "kimiru",
-          "text": "Take care of each other. Time has a habit of testing the bonds you think are unbreakable.",
+          "text": "Cuidem uns dos outros. O tempo tem o hábito de testar os laços que vocês acham inquebráveis.",
           "emotion": "serious"
         },
         {
           "speaker": null,
-          "text": "Drew doesn't flinch. He holds the cat's gaze. Then nods. Once.",
+          "text": "Drew não recua. Ele sustenta o olhar do gato. Depois assente. Uma vez.",
           "emotion": "neutral"
         },
         {
           "speaker": "drew",
-          "text": "Always.",
+          "text": "Sempre.",
           "emotion": "certain"
         },
         {
           "speaker": null,
-          "text": "Kimiru blinks. Then, like smoke in a breeze, he's gone. The stump is empty. The clearing is just a clearing again.",
+          "text": "Kimiru pisca. Depois, como fumaça na brisa, ele se foi. O toco está vazio. A clareira é só uma clareira de novo.",
           "emotion": "neutral"
         },
         {
           "speaker": "lu",
-          "text": "Did that... actually happen?",
+          "text": "Isso... realmente aconteceu?",
           "emotion": "stunned"
         },
         {
           "speaker": "drew",
-          "text": "Yeah. It did.",
+          "text": "Aconteceu. Sim.",
           "emotion": "quiet"
         },
         {
           "speaker": "yen",
-          "text": "I liked him.",
+          "text": "Eu gostei dele.",
           "emotion": "simple"
         },
         {
           "speaker": null,
-          "text": "Nobody argues with that.",
+          "text": "Ninguém discorda.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "They walk home together. Nobody says much. The afternoon light slants golden through the trees. Rush's house comes first.",
+          "text": "Eles voltam pra casa juntos. Ninguém fala muito. A luz da tarde entra dourada entre as árvores. A casa do Rush é a primeira.",
           "emotion": "neutral",
           "nextScene": "walk_home"
         }
@@ -758,46 +758,46 @@
       "dialogue": [
         {
           "speaker": "drew",
-          "text": "This is you?",
+          "text": "É aqui?",
           "emotion": "casual"
         },
         {
           "speaker": "rush",
-          "text": "Yeah. The one with the—",
+          "text": "É. A da—",
           "emotion": "sheepish"
         },
         {
           "speaker": "drew",
-          "text": "Broken mailbox. I see it.",
+          "text": "Caixa de correio quebrada. Tô vendo.",
           "emotion": "grinning"
         },
         {
           "speaker": "lu",
-          "text": "Rush — don't tell anyone about the cat, okay? They'll think we're crazy.",
+          "text": "Rush — não conta pra ninguém sobre o gato, tá? Vão achar que a gente é doido.",
           "emotion": "serious"
         },
         {
           "speaker": "rush",
-          "text": "Who would I tell?",
+          "text": "Pra quem eu contaria?",
           "emotion": "honest"
         },
         {
           "speaker": "lu",
-          "text": "Good point.",
+          "text": "É verdade.",
           "emotion": "soft"
         },
         {
           "speaker": "drew",
-          "text": "Same time tomorrow?",
+          "text": "Mesmo horário amanhã?",
           "emotion": "easy"
         },
         {
           "speaker": null,
-          "text": "He says it like it's obvious. Like tomorrow was always going to include Rush.",
+          "text": "Ele fala como se fosse óbvio. Como se amanhã sempre fosse incluir o Rush.",
           "emotion": "neutral",
           "choices": [
             {
-              "text": "\"Yeah. Same time tomorrow.\"",
+              "text": "\"Sim. Mesmo horário amanhã.\"",
               "nextNode": null,
               "effects": [
                 { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": "3" },
@@ -805,19 +805,19 @@
                 { "type": "ADJUST_RELATIONSHIP", "target": "yen", "value": "2" },
                 { "type": "SET_FLAG", "target": "confirmed_tomorrow", "value": "true" }
               ],
-              "notification": "Tomorrow has a shape now."
+              "notification": "Amanhã tem forma agora."
             },
             {
-              "text": "\"You guys don't have to walk with me. I know the way now.\"",
+              "text": "\"Vocês não precisam andar comigo. Eu já sei o caminho.\"",
               "nextNode": null,
               "effects": [
                 { "type": "ADJUST_RELATIONSHIP", "target": "drew", "value": "1" },
                 { "type": "ADD_MEMORY", "target": "pushed_away_first", "value": "true" }
               ],
-              "notification": "Drew looks at you. \"We know. We want to.\""
+              "notification": "Drew olha pra você. \"A gente sabe. A gente quer.\""
             },
             {
-              "text": "[Nod. Small smile.]",
+              "text": "[Acenar. Sorriso pequeno.]",
               "nextNode": null,
               "silent": true,
               "effects": [
@@ -825,7 +825,7 @@
                 { "type": "ADJUST_RELATIONSHIP", "target": "yen", "value": "3" },
                 { "type": "ADD_VIRTUE", "target": "patience", "value": "1" }
               ],
-              "notification": "Yen waves. Tiny wave. You wave back."
+              "notification": "Yen acena. Aceno pequenininho. Você acena de volta."
             }
           ],
           "timer": 10.0,
@@ -833,22 +833,22 @@
         },
         {
           "speaker": null,
-          "text": "Rush watches them go. Drew walking in the middle. Lu gesturing about something. Yen holding Drew's hand. Three people he didn't know this morning.",
+          "text": "Rush vê eles irem embora. Drew andando no meio. Lu gesticulando sobre alguma coisa. Yen segurando a mão do Drew. Três pessoas que ele não conhecia hoje de manhã.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "He goes inside. His mom asks how the first day was. He says \"fine.\" He doesn't mention the talking cat. Or the clearing. Or the boy who shook his hand like he meant it.",
+          "text": "Ele entra em casa. A mãe pergunta como foi o primeiro dia. Ele diz \"legal.\" Não menciona o gato que fala. Nem a clareira. Nem o garoto que apertou sua mão como se aquilo significasse algo.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "But that night, lying in bed, staring at the ceiling, Rush feels something he hasn't felt since the move. Something he forgot the shape of.",
+          "text": "Mas naquela noite, deitado na cama, olhando pro teto, Rush sente algo que não sentia desde a mudança. Algo cuja forma ele tinha esquecido.",
           "emotion": "neutral"
         },
         {
           "speaker": null,
-          "text": "Belonging.",
+          "text": "Pertencimento.",
           "emotion": "neutral",
           "effects": [
             { "type": "ADD_MEMORY", "target": "first_day_belonging", "value": "true" },

@@ -3,6 +3,7 @@ package com.ontime.rendering;
 import com.ontime.engine.Window;
 import com.ontime.history.HistoricalEra;
 import com.ontime.logic.EvidenceBoard;
+import com.ontime.i18n.LocaleManager;
 
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL15.*;
@@ -81,33 +82,45 @@ public class UIRenderer {
     public void renderTitleScreen() {
         glDisable(GL_DEPTH_TEST);
 
+        LocaleManager loc = LocaleManager.getInstance();
         float sw = window.getWidth();
         float sh = window.getHeight();
 
         drawRect(0, 0, sw, sh, 0.03f, 0.02f, 0.02f, 1.0f);
 
         // Title: ON TIME
-        String title = "ON TIME";
+        String title = loc.get("game_title");
         float titleScale = 3.0f;
         float titleW = title.length() * CHAR_W * titleScale;
         float titleX = (sw - titleW) / 2;
         float titleY = sh * 0.28f;
         drawTextScaled(title, titleX, titleY, titleScale, 0.85f, 0.75f, 0.55f, 1.0f);
 
-        // Tagline
-        String tagline1 = "Every moment is a choice.";
-        float tag1W = tagline1.length() * CHAR_W;
-        drawText(tagline1, (sw - tag1W) / 2, titleY + 70, 0.55f, 0.45f, 0.35f, 0.7f);
-
-        String tagline2 = "Every era is a teacher.";
-        float tag2W = tagline2.length() * CHAR_W;
-        drawText(tagline2, (sw - tag2W) / 2, titleY + 95, 0.50f, 0.42f, 0.33f, 0.6f);
+        // Tagline (split into two lines from the locale string)
+        String tagline = loc.get("tagline");
+        // Try to split on period
+        int splitIdx = tagline.indexOf(". ");
+        if (splitIdx > 0) {
+            String tagline1 = tagline.substring(0, splitIdx + 1);
+            String tagline2 = tagline.substring(splitIdx + 2);
+            float tag1W = tagline1.length() * CHAR_W;
+            drawText(tagline1, (sw - tag1W) / 2, titleY + 70, 0.55f, 0.45f, 0.35f, 0.7f);
+            float tag2W = tagline2.length() * CHAR_W;
+            drawText(tagline2, (sw - tag2W) / 2, titleY + 95, 0.50f, 0.42f, 0.33f, 0.6f);
+        } else {
+            float tagW = tagline.length() * CHAR_W;
+            drawText(tagline, (sw - tagW) / 2, titleY + 70, 0.55f, 0.45f, 0.35f, 0.7f);
+        }
 
         // Pulsing prompt
         float pulse = (float) (0.4 + 0.3 * Math.sin(System.currentTimeMillis() / 500.0));
-        String prompt = "Press SPACE to begin";
+        String prompt = loc.get("press_start");
         float promptW = prompt.length() * CHAR_W;
         drawText(prompt, (sw - promptW) / 2, sh * 0.65f, 0.6f, 0.5f, 0.4f, pulse);
+
+        // Language indicator (bottom-left)
+        String langHint = "[L] " + loc.getLocaleDisplayName();
+        drawText(langHint, 20, sh - 35, 0.45f, 0.4f, 0.35f, 0.5f);
 
         // Hourglass symbol (the On Time emblem)
         float hourglassX = sw / 2 - 6;
@@ -122,7 +135,7 @@ public class UIRenderer {
         drawRect(hourglassX - 4, hourglassY + 13, 14, 3, 0.8f, 0.6f, 0.3f, 0.9f * flicker);
 
         // Credits
-        String credit = "For Yen, Rush, and Lu";
+        String credit = loc.get("dedication");
         float creditW = credit.length() * CHAR_W * 0.7f;
         drawTextScaled(credit, (sw - creditW) / 2, sh * 0.85f, 0.7f, 0.4f, 0.35f, 0.3f, 0.5f);
 
@@ -139,6 +152,7 @@ public class UIRenderer {
     public void renderChapterTitle(int number, String title, String eraName) {
         glDisable(GL_DEPTH_TEST);
 
+        LocaleManager loc = LocaleManager.getInstance();
         float sw = window.getWidth();
         float sh = window.getHeight();
 
@@ -153,7 +167,7 @@ public class UIRenderer {
         }
 
         // Chapter number
-        String chapterStr = number > 0 ? "Chapter " + number : "Prologue";
+        String chapterStr = number > 0 ? loc.get("chapter_label", number) : "Prologue";
         float chW = chapterStr.length() * CHAR_W;
         drawText(chapterStr, (sw - chW) / 2, sh * 0.4f, 0.5f, 0.4f, 0.3f, 0.8f);
 
@@ -218,6 +232,7 @@ public class UIRenderer {
     public void renderEvidenceBoardOverlay(EvidenceBoard board) {
         glDisable(GL_DEPTH_TEST);
 
+        LocaleManager loc = LocaleManager.getInstance();
         float sw = window.getWidth();
         float sh = window.getHeight();
 
@@ -225,7 +240,7 @@ public class UIRenderer {
         drawRect(0, 0, sw, sh, 0.0f, 0.0f, 0.0f, 0.7f);
 
         // Title
-        String title = "EVIDENCE BOARD";
+        String title = loc.get("evidence_board_title");
         float titleScale = 1.5f;
         float titleW = title.length() * CHAR_W * titleScale;
         drawTextScaled(title, (sw - titleW) / 2, 30, titleScale, 0.7f, 0.6f, 0.4f, 0.9f);
@@ -234,7 +249,7 @@ public class UIRenderer {
         float colWidth = sw / 3;
 
         // Verified Facts
-        drawText("VERIFIED FACTS", colWidth * 0 + 30, 80, 0.3f, 0.7f, 0.3f, 0.8f);
+        drawText(loc.get("evidence_facts").toUpperCase(), colWidth * 0 + 30, 80, 0.3f, 0.7f, 0.3f, 0.8f);
         int y = 110;
         for (com.ontime.logic.EvidenceBoard.Evidence fact : board.getVerifiedFacts()) {
             drawText(fact.text, colWidth * 0 + 30, y, 0.6f, 0.6f, 0.55f, 0.7f);
@@ -242,7 +257,7 @@ public class UIRenderer {
         }
 
         // Inferences
-        drawText("INFERENCES", colWidth * 1 + 30, 80, 0.7f, 0.7f, 0.3f, 0.8f);
+        drawText(loc.get("evidence_inferences").toUpperCase(), colWidth * 1 + 30, 80, 0.7f, 0.7f, 0.3f, 0.8f);
         y = 110;
         for (com.ontime.logic.EvidenceBoard.Evidence inference : board.getInferences()) {
             drawText(inference.text, colWidth * 1 + 30, y, 0.6f, 0.6f, 0.55f, 0.7f);
@@ -250,7 +265,7 @@ public class UIRenderer {
         }
 
         // Emotional Reactions
-        drawText("EMOTIONAL REACTIONS", colWidth * 2 + 30, 80, 0.7f, 0.3f, 0.3f, 0.8f);
+        drawText(loc.get("evidence_emotions").toUpperCase(), colWidth * 2 + 30, 80, 0.7f, 0.3f, 0.3f, 0.8f);
         y = 110;
         for (com.ontime.logic.EvidenceBoard.Evidence reaction : board.getEmotionalReactions()) {
             drawText(reaction.text, colWidth * 2 + 30, y, 0.6f, 0.6f, 0.55f, 0.7f);
@@ -258,7 +273,7 @@ public class UIRenderer {
         }
 
         // Hint
-        String hint = "Press TAB or ESC to close";
+        String hint = loc.get("evidence_hint");
         float hintW = hint.length() * CHAR_W;
         drawText(hint, (sw - hintW) / 2, sh - 40, 0.4f, 0.4f, 0.4f, 0.5f);
 
@@ -271,16 +286,17 @@ public class UIRenderer {
     public void renderPauseMenu() {
         glDisable(GL_DEPTH_TEST);
 
+        LocaleManager loc = LocaleManager.getInstance();
         float sw = window.getWidth();
         float sh = window.getHeight();
 
         drawRect(0, 0, sw, sh, 0.0f, 0.0f, 0.0f, 0.6f);
 
-        String paused = "PAUSED";
+        String paused = loc.get("paused");
         float pw = paused.length() * CHAR_W * 2;
         drawTextScaled(paused, (sw - pw) / 2, sh * 0.4f, 2.0f, 0.7f, 0.6f, 0.5f, 0.9f);
 
-        String hint = "Press ESC to resume";
+        String hint = loc.get("pause_hint");
         float hw = hint.length() * CHAR_W;
         drawText(hint, (sw - hw) / 2, sh * 0.52f, 0.5f, 0.4f, 0.4f, 0.6f);
 

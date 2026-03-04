@@ -2,12 +2,15 @@ package com.ontime.narrative;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.ontime.i18n.LocaleManager;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 /**
  * Loads chapters from JSON resource files.
+ * Respects the current locale — tries locale-specific chapter first,
+ * then falls back to the default (English) chapter.
  */
 public class ChapterManager {
 
@@ -18,9 +21,21 @@ public class ChapterManager {
     }
 
     public Chapter loadChapter(String chapterId) {
-        String path = "/chapters/" + chapterId + ".json";
+        // Try locale-specific chapter first (e.g. /chapters/pt-BR/chapter_1.json)
+        String path = LocaleManager.getInstance().getChapterResourcePath(chapterId);
         try (InputStream is = getClass().getResourceAsStream(path)) {
             if (is == null) {
+                // Fall back to default English path
+                String fallback = "/chapters/" + chapterId + ".json";
+                if (!fallback.equals(path)) {
+                    System.out.println("[i18n] Localized chapter not found: " + path + " → falling back to " + fallback);
+                    try (InputStream fallbackIs = getClass().getResourceAsStream(fallback)) {
+                        if (fallbackIs != null) {
+                            String json = new String(fallbackIs.readAllBytes(), StandardCharsets.UTF_8);
+                            return gson.fromJson(json, Chapter.class);
+                        }
+                    }
+                }
                 System.err.println("Chapter file not found: " + path);
                 return createPlaceholder(chapterId);
             }

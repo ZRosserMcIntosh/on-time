@@ -12,6 +12,7 @@ import com.ontime.logic.EvidenceBoard;
 import com.ontime.logic.BreathMechanic;
 import com.ontime.history.HistoricalEraManager;
 import com.ontime.history.HistoricalEra;
+import com.ontime.i18n.LocaleManager;
 
 import static org.lwjgl.glfw.GLFW.*;
 
@@ -187,6 +188,11 @@ public class GameEngine {
 
         // Title screen — any key to start
         if (phase == Phase.TITLE_SCREEN) {
+            // Language toggle
+            if (input.isKeyPressed(GLFW_KEY_L)) {
+                LocaleManager.getInstance().cycleLocale();
+                return;
+            }
             if (input.isKeyPressed(GLFW_KEY_SPACE) || input.isKeyPressed(GLFW_KEY_ENTER)
                     || mouse.isLeftButtonPressed()) {
                 fadeToBlack(() -> {

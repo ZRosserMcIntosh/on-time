@@ -1,4 +1,4 @@
-# The Rushlight — Story Architecture (v2)
+# On Time — Story Architecture (v2)
 
 > *"A small light is still a light."*
 > For Yen, Rush, and Lu. — YenLu Games
@@ -122,13 +122,17 @@ Every chapter deposits into two accounts:
 - Kimiru appears for the first time. "I've been waiting... for it to begin."
 - ~45 min. 3 scenes, 2 choices.
 
-**Chapter 1: "The Fort"** ✅ WRITTEN
-- Building the fort. Drew teaches knots. "Crooked things hold. Perfect things break."
-- Lu finds the carved symbol. Drew touches it too long.
-- Yen scared of a noise → Drew puts her on his shoulders.
-- Kimiru watches. Says nothing.
-- ~60 min. 4 scenes, 2 choices (fort name + "Are you ever scared?").
-- DEPOSITS: Drew's patience. Drew as protector. First mystery (symbol).
+**Chapter 1: "First Day"** ✅ WRITTEN
+- Rush's first day at school. Nervous, schedule upside down.
+- Lu finds him in the schoolyard: "You're holding that upside down." Instant ease.
+- Drew appears in the hallway carrying Lu's forgotten backpack. Protective older brother.
+- Yen in the classroom: "You have kind eyes." Quiet and observant.
+- After school, the four walk together. Drew leads them to a hidden clearing.
+- Kimiru appears, speaks: "I do considerably more than stare." Reveals he travels through time.
+- "Time is a river — and right now, the river is troubled."
+- Kimiru vanishes. Tells them to go home and be children... for now.
+- ~60 min. 6 scenes, 3 timed choices (response to Yen, reaction to Kimiru, goodbye).
+- DEPOSITS: Group formation. Lu's warmth. Drew's protectiveness. Yen's quiet depth. Kimiru's mission. First sense of belonging.
 
 **Chapter 2: "The Storm"** ✅ WRITTEN
 - Power outage. Flashlight tag. Shadow puppets.

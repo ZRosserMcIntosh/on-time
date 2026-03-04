@@ -87,6 +87,7 @@ java -XstartOnFirstThread -jar target/on-time-0.2.0.jar
 | **1/2/3/4** | Quick-select choice |
 | **TAB** | Open Evidence Board |
 | **Hold SHIFT** | Breath Mechanic (slows time) |
+| **L** | Toggle language (English ↔ Português) |
 | **ESC** | Pause / Resume |
 
 ---
@@ -175,10 +176,21 @@ src/main/java/com/ontime/
 ├── characters/
 │   ├── Character.java              # Character state (emotion, alive, color)
 │   └── CharacterManager.java       # Character registry
+├── i18n/
+│   └── LocaleManager.java          # Localization: English + Brazilian Portuguese
 └── audio/
     └── AudioEngine.java            # OpenAL music, SFX, voice with ducking
 
-src/main/resources/chapters/        # Chapter JSON files (prologue, chapter_1–5)
+src/main/resources/
+├── chapters/                       # Chapter JSON files (English, default)
+│   ├── prologue.json
+│   ├── chapter_1.json – chapter_5.json
+│   └── pt-BR/                      # Brazilian Portuguese translations
+│       ├── prologue.json
+│       └── chapter_1.json
+└── locale/                         # UI string bundles
+    ├── ui_en.json
+    └── ui_pt_BR.json
 docs/
 ├── STORY_ARCHITECTURE.md           # Full 100-chapter story design
 └── HISTORY_ERAS.md                 # 12 eras + cognitive principle mapping
@@ -204,6 +216,47 @@ docs/
 | macOS (ARM64 + x86_64) | ✅ Supported |
 | Windows (x64 + ARM64) | ✅ Supported |
 | Linux (x64 + ARM64) | ✅ Supported |
+
+---
+
+## Languages
+
+On Time is fully playable in **English** and **Brazilian Portuguese** (Português do Brasil).
+
+| Language | Code | Status |
+|----------|------|--------|
+| 🇺🇸 English | `en` | ✅ Complete |
+| 🇧🇷 Português (Brasil) | `pt-BR` | ✅ Complete |
+
+### How It Works
+
+- Press **L** on the title screen to toggle between languages
+- All UI strings (menus, prompts, HUD labels) switch instantly
+- Chapter dialogue is loaded from locale-specific files (`chapters/pt-BR/chapter_1.json`)
+- If a chapter hasn't been translated yet, the English version is used as a fallback
+- Language preference persists across scenes (save-level persistence coming soon)
+
+### Translation Architecture
+
+```
+src/main/resources/
+├── locale/
+│   ├── ui_en.json         # English UI strings
+│   └── ui_pt_BR.json      # Brazilian Portuguese UI strings
+├── chapters/
+│   ├── prologue.json       # English (default)
+│   ├── chapter_1.json
+│   ├── ...
+│   └── pt-BR/
+│       ├── prologue.json   # Brazilian Portuguese
+│       ├── chapter_1.json
+│       └── ...
+```
+
+Adding a new language:
+1. Create `locale/ui_<code>.json` with all UI string keys
+2. Create `chapters/<code>/` directory with translated chapter JSONs
+3. Add the locale code to `LocaleManager.SUPPORTED_LOCALES`
 
 ---
 
