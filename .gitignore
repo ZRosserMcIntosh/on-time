@@ -18,3 +18,9 @@ Thumbs.db
 
 # Save data (local only)
 saves/
+
+# Auto-updater temp files
+.ontime-update.tmp
+.ontime-update-ready
+.ontime-apply-update.*
+*.backup

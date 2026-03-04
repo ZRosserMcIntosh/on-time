@@ -69,6 +69,14 @@ public class Main {
         System.out.println("  ╚══════════════════════════════════════╝");
         System.out.println();
 
+        // Auto-update: apply any pending update from last run, then check for new
+        AutoUpdater.applyPendingUpdate();
+        if (AutoUpdater.checkAndUpdate()) {
+            System.out.println("[On Time] Restarting with new version...");
+            System.exit(0); // Restart script handles re-launch
+            return;
+        }
+
         GameEngine engine = new GameEngine();
         engine.run();
     }
